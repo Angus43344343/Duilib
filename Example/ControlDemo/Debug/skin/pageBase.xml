@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+    <!--滚动条样式-->
+    <Style name="styleVScrollBar" shared="true" value="width=&quot;16&quot; showbutton1=&quot;true&quot; showbutton2=&quot;true&quot; button1normalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,90,16,106&apos;&quot; button1hotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,90,34,106&apos;&quot; button1pushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,90,52,106&apos;&quot; button1disabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,90,70,106&apos;&quot; button2normalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,108,16,124&apos;&quot; button2hotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,108,34,124&apos;&quot; button2pushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,108,52,124&apos;&quot; button2disabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,108,70,124&apos;&quot; thumbnormalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,126,16,142&apos; corner=&apos;2,2,2,2&apos;&quot; thumbhotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,126,34,142&apos; corner=&apos;2,2,2,2&apos;&quot; thumbpushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,126,52,142&apos; corner=&apos;2,2,2,2&apos;&quot; thumbdisabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,126,70,142&apos;corner=&apos;2,2,2,2&apos;&quot; railnormalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,144,16,160&apos; corner=&apos;2,2,2,2&apos;&quot; railhotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,144,34,160&apos; corner=&apos;2,2,2,2&apos;&quot; railpushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,144,52,160&apos; corner=&apos;2,2,2,2&apos;&quot; raildisabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,144,70,160&apos; corner=&apos;2,2,2,2&apos;&quot; bknormalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,161,16,177&apos;&quot; bkhotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,161,34,177&apos;&quot; bkpushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,161,52,177&apos;&quot; bkdisabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,161,70,177&apos;&quot;"/>
+    <Style name="styleHScrollBar" shared="true" value="height=&quot;16&quot; showbutton1=&quot;true&quot; showbutton2=&quot;true&quot; button1normalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,0,16,16&apos;&quot; button1hotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,0,34,16&apos;&quot; button1pushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,0,52,16&apos;&quot; button1disabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,0,70,16&apos;&quot; button2normalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,18,16,34&apos;&quot; button2hotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,18,34,34&apos;&quot; button2pushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,18,52,34&apos;&quot; button2disabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,18,70,34&apos;&quot; thumbnormalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,36,16,52&apos; corner=&apos;2,2,2,2&apos;&quot; thumbhotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,36,34,52&apos; corner=&apos;2,2,2,2&apos;&quot; thumbpushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,36,52,52&apos; corner=&apos;2,2,2,2&apos;&quot; thumbdisabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,36,70,52&apos;corner=&apos;2,2,2,2&apos;&quot; railnormalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,54,16,70&apos; corner=&apos;2,2,2,2&apos;&quot; railhotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,54,34,70&apos; corner=&apos;2,2,2,2&apos;&quot; railpushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,54,52,70&apos; corner=&apos;2,2,2,2&apos;&quot; raildisabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,54,70,70&apos; corner=&apos;2,2,2,2&apos;&quot; bknormalimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;0,72,16,88&apos;&quot; bkhotimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;18,72,34,88&apos;&quot; bkpushedimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;36,72,52,88&apos;&quot; bkdisabledimage=&quot;res=&apos;scrollbar/scrollbar.bmp&apos; source=&apos;54,72,70,88&apos;&quot;"/>
+
+    <Style name="styleEdit" shared="true" value="width=&quot;130&quot; height=&quot;30&quot; bkcolor=&quot;#fffffff0&quot;"/>
+    <Style name="styleRichEdit" shared="true" value="width=&quot;130&quot; height=&quot;30&quot; multiline=&quot;false&quot; textpadding=&quot;4,10,3,4&quot; bkcolor=&quot;#fffffff0&quot; "/>
+    <Style name="styleCheckBox" shared="true" value="autocalcwidth=&quot;true&quot; height=&quot;17&quot; align=&quot;left&quot; valign=&quot;vcenter&quot; EnableAutoCheck=&quot;true&quot; textpadding=&quot;20,0,0,0&quot; hottextcolor=&quot;#ffFFFFFF&quot; normalimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;0,0,17,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; hotimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;17,0,34,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; pushedimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;34,0,51,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; selectedimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;34,0,51,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; selectedhotimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;51,0,68,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot;"/>
+    <Style name="styleRadio" shared="true" value="autocalcwidth=&quot;true&quot; height=&quot;17&quot; align=&quot;left&quot; valign=&quot;vcenter&quot; group=&quot;gRadio&quot; textpadding=&quot;20,0,0,0&quot; hottextcolor=&quot;#ffFFFFFF&quot; normalimage=&quot;res=&apos;checkbox/radio.png&apos; source=&apos;0,0,17,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; hotimage=&quot;res=&apos;checkbox/radio.png&apos; source=&apos;17,0,34,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; pushedimage=&quot;res=&apos;checkbox/radio.png&apos; source=&apos;34,0,51,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; selectedimage=&quot;res=&apos;checkbox/radio.png&apos; source=&apos;34,0,51,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; selectedhotimage=&quot;res=&apos;checkbox/radio.png&apos; source=&apos;51,0,68,17&apos; dest=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot;"/>
+    <Style name="styleCombo" shared="true" value="width=&quot;150&quot; height=&quot;30&quot; vlign=&quot;vcenter&quot; textpadding=&quot;10,0,0,0&quot; normalimage=&quot;res=&apos;combo/combo.png&apos; source=&apos;0,0,100,22&apos; corner=&apos;2,2,28,2&apos;&quot; hotimage=&quot;res=&apos;combo/combo.png&apos; source=&apos;0,22,100,44&apos; corner=&apos;2,2,28,2&apos;&quot; pushedimage=&quot;res=&apos;combo/combo.png&apos; source=&apos;0,44,100,66&apos; corner=&apos;2,2,28,2&apos;&quot;"/>
+
+    <HorizontalLayout name="htlClient"><!--客户端-->
+        <HorizontalLayout width="160" sepimm="true" sepwidth="3" sepcolor="#ffFAFAD2"><!--左容器--><!--分隔符拖动功能测试-->
+            <VerticalLayout  vscrollbar="true" >
+
+                <Label name="lblLabel" height="60"  text="Label测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblText" height="60" text="Text测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblRollText" height="60" text="RollText测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblRing" height="80" text="Ring测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblIPAddress" height="60" text="IPAddress测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblIPAddressEx" height="60" text="IPAddressEx测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblEdit" height="60" text="Edit测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblRichEdit" height="100" text="RichEdit测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblDateTime" height="60" text="DateTime测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblHotKey" height="60" text="HotKey测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblProgress" height="130" text="Progress测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblSlider" height="60" text="Slider测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblButton" height="60" text="Button测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblFadeButton" height="60" text="FadeButton测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblColorPalette" height="60" text="ColorPalette测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+                
+                <Label name="lblCheckBox" height="60" text="CheckBox测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+                
+                <Label name="lblCombo" height="60" text="Combo测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+
+                <Label name="lblGruopBox" height="60" text="GroupBox测试：" align="right" valign="vcenter"/>
+                <Control height="1" bkcolor="#ffFF00FF"/>
+            </VerticalLayout>
+        </HorizontalLayout><!--=========================================================左容器-->
+
+        <VerticalLayout vscrollbar="true">
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--Label-->
+                <Label name="lblTest" width="120" height="40" drop="true" bkcolor="#ffFFFFE0" text="这是只一个特殊的测试" endellipsis="true"/>
+                <Label name="lblTest1" width="120" height="60" drag="true" bkcolor="#ffFFFFE0" text="这是只{\n}一个特殊的测试一wordbreak测试一一一" textpadding="4,4,4,4" wordbreak="true"/>
+                <Label name="lblTest2" autocalcwidth="true" autocalcheight="true" bkcolor="#ffFFFFE0" text="自动填充控件宽和高测试" />
+                <Label name="lblTest3" autocalcwidth="true" height="40" bkcolor="#ffFFFFE0" showhtml="true" text="{c #FF69B4}{b}富文本测试{/b}{a}www.baidu.com{/a}{/c}"/>
+            </HorizontalLayout><!--=====================================================================Label-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--Text-->
+                <Text  name="textTest" autocalcwidth="true" height="40" bkcolor="#ffFFFFE0" showhtml="true" text="{c #FF69B4}{b}详细超级链细节{/b}{a}www.baidu.com{/a}富{a}www.baidu.com{/a}文{a}www.baidu.com{/a}本{a}www.baidu.com{/a}{/c}" valign="vcenter"/>
+            </HorizontalLayout><!--=====================================================================Text-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" width="120" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--RollText-->
+                <RollText  name="rolltextTest" bkcolor="#ffFFFFE0" roll="true" direction="bottom" timespan="200" timeendspan="10000" text="广告大酬宾{\n}五一商品不要钱{\n}随便拿啊" valign="vcenter"/>
+            </HorizontalLayout><!--=================================================================================RollText-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="80">  <!--Ring-->
+                <Ring  name="RingTest" width="80" height="80" bkimage="ring/ring.png" text="Loading" align="center" valign="vcenter"/>
+            </HorizontalLayout><!--=============Ring-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--IPAddress-->
+                <IPAddress name="ipTest" width="110" height="30" valign="vcenter" bkcolor="#fffffff0"/>
+            </HorizontalLayout><!--=====================================================================IPAddress-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--IPAddressEx-->
+                <IPAddressEx name="ipExTest" width="130" height="30" bkcolor="#fffffff0"/>
+            </HorizontalLayout><!--=====================================================================IPAddressEx-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter" hscrollbar="true"><!--Edit-->
+                <Edit name="EditTest" style="styleEdit" tipvalue="提示文字测试" />
+                <Edit name="EditTest1" style="styleEdit" readonly="true" text="只读控件"/>
+                <Edit name="EditTest2" style="styleEdit" numberonly="true" tipvalue="只能输入数字"/>
+                <Edit name="EditTest3" style="styleEdit" maxchar="10" tipvalue="限制输入10个字符"/>
+                <Edit name="EditTest4" style="styleEdit" password="true" passwordchar="*" tipvalue="输入密码"/>
+                <Edit name="EditTest5" style="styleEdit" width="400" text="文本测试{\n}只支持单行:DrawText里DT_SINGLELINE"/>
+            </HorizontalLayout><!--======================================================================================Edit-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="100" inset="0,2,2,2" childpadding="20" childvalign="vcenter" vscrollbar="true" vscrollbarstyle="styleVScrollBar" hscrollbar="true" hscrollbarstyle="styleHScrollBar"><!--RichEdit-->
+                <RichEdit name="reditTest" width="200" height="140" drop="true" vscrollbar="true" autovscroll="true" hscrollbar="true" autohscroll="true" tipvalue="滚动条测试" bkcolor="#fffffff0"/>
+                <RichEdit name="reditTest1" width="200" height="90" multiline="false" tipvalue="设置单行,背景透明" tipvaluecolor="#ffFFBBFF" tipvaluealign="left" transparent="false" bkcolor="#fffffff0"/>
+                <RichEdit name="reditTest2" style="styleRichEdit" readonly="true" tipvalue="只读控件"/>
+                <RichEdit name="reditTest3" style="styleRichEdit" font="1" maxchar="10"  tipvalue="限制输入10个字符"/>
+                <RichEdit name="reditTest4" style="styleRichEdit" tipvalue="输入密码" password="true" passwordchar="*"/>
+                <RichEdit name="reditTest5" width="200" height="90" vscrollbar="true" autovscroll="true" bkcolor="#fffffff0"/>
+                <RichEdit name="reditTest6" width="240" height="26" childvalign="vcenter" textpadding="16,6,16,0" multiline="false" borderround="26,26"  tipvalue="周杰伦 晴天" bkcolor="#ffFFFFE0">
+                    <Control height="1"/>
+                    <Button name="btnSearch" width="16" height="16" normalimage="res=&apos;common/search.png&apos;" hotimage="res=&apos;common/search.png&apos;" pushedimage="res=&apos;common/search.png&apos;"/>
+                </RichEdit>
+
+                <RichEdit name="reditTest7" width="240" height="90" textpadding="2,20,2,0" bkcolor="#ffFFFFE0">
+                    <Control height="1"/>
+                    <Button name="btnSearch" width="16" height="16" normalimage="res=&apos;common/search.png&apos;" hotimage="res=&apos;common/search.png&apos;" pushedimage="res=&apos;common/search.png&apos;"/>
+                </RichEdit>
+            </HorizontalLayout><!--============================================================================================================================================================================RichEdit-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--DateTime-->
+                <DateTime name="dtimeTest" width="160" height="30" textpadding="6,0,0,0" bkcolor="#fffffff0"/>
+            </HorizontalLayout><!--=====================================================================DateTime-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--HotKey-->
+                <HotKey name="hkeyTest" width="130" height="30" nativebkcolor="#FFBBFFFF" bkcolor="#fffffff0"/>
+            </HorizontalLayout><!--=====================================================================Hotkey-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="130" inset="10,2,2,2" childpadding="20" childvalign="vcenter"><!--Progress-->
+                <Progress name="prosTest" width="124" height="16" min="0" max="200" value="100" showtext="true" valign="vcenter" bkcolor="#ffffffff" forecolor="#ff90EE90"/>
+                <Progress name="prosTest1" width="20" height="124" min="0" max="200" value="100" hor="false" showtext="true" valign="vcenter" bkcolor="#ffffffff" forecolor="#ff90EE90"/>
+                <Progress name="prosTest2" width="124" height="16" min="0" max="200" value="100" showtext="true" valign="vcenter" bkcolor="#ffffffff" foreimage="res=&apos;progress/1.jpg&apos;"/>
+                <Progress name="prosTest3" width="100" height="100" min="0" max="200" value="160" circle="true" circlewidth="20" showtext="true" valign="vcenter" bkcolor="#FFFFFF33" forecolor="#ff90EE90"/>
+            </HorizontalLayout><!--=====================================================================Progress-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--Slider-->
+                <Slider name="sliderTest" width="124" min="0" max="200" value="50" height="19" bkimage="res=&apos;slider/SliderBarBk.bmp&apos; mask=&apos;#ffff00ff&apos;" thumbimage="res=&apos;Slider/SliderBarThumb.png&apos;" thumbsize="12,19"/>
+                <Slider name="sliderTest1" width="124" min="0" max="200" value="50" height="19" bkimage="res=&apos;slider/SliderBarBk.bmp&apos; mask=&apos;#ffffffff&apos;" thumbimage="res=&apos;Slider/SliderBarThumb.png&apos;" thumbsize="12,19" step="10" sendmove="true" showtext="true"/>
+            </HorizontalLayout><!--=====================================================================Slider-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--Button-->
+                <Button name="btnTest" width="117" height="36" menu="true" text="状态图测试" textcolor="#ffFFBBFF" hottextcolor="#ffF0FFFF" pushedtextcolor="#ffFFFACD" focusedtextcolor="#ff00FFFF" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
+                <Button name="btnTest1" width="117" height="36" borderround="36,36" text="状态色测试" bkcolor="#ffFFE4C4" hotbkcolor="#ffFAEBD7" pushedbkcolor="#ffF8F8FF" disabledbkcolor="#ffF5F5F5"/>
+                <Button name="btnTest2" width="45" height="29" stateimage="res=&apos;button/close.png&apos;" statecount="4"/>
+                <Button name="btnTest3" float="0.5,0.2,0.9,0.8" hotfont="1" text="自适应大小" bkcolor="#ffFFE4C4" hotbkcolor="#ffFAEBD7" pushedbkcolor="#ffF8F8FF" disabledbkcolor="#ffF5F5F5" bindtablayoutname="aTabLayout" bindtabindex="1"/>
+            </HorizontalLayout><!--=====================================================================Button-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--FadeButton-->
+                <FadeButton name="fbtnTest" width="117" height="36" text="FadeButton测试" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
+                <FadeButton name="fbtnTest1" width="117" height="36" text="非模态对话框测试" padding="40,0,0,0" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
+                <FadeButton name="fbtnTest2" width="117" height="36" text="模态对话框测试" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
+                <Button name="floatbtn" text="浮动按钮" colorhsl="true" float="true" pos="-20,0,-80,30" textcolor="#FF000000" bkcolor="#FFFF5555" hotbkcolor="#AAFFFF00" pushedbkcolor="#FFFF00FF" borderround="4,4"/>
+            </HorizontalLayout><!--=====================================================================FadeButton-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--ColorPalette-->
+                <ColorPalette name="paletteTest" width="200" height="60" palletheight="40" barheight="12" thumbimage="res=&apos;palette/cursor.png&apos;"/>
+            </HorizontalLayout><!--=====================================================================ColorPalette-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+            
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--CheckBox-->
+                <CheckBox name="cboxTest" text="复选框1" style="styleCheckBox"/>
+                <CheckBox name="cboxTest1" text="复选框2" style="styleCheckBox"/>
+                <CheckBox name="cboxTest2" text="复选框3" style="styleCheckBox"/>
+                <CheckBox name="cboxTest3" text="复选框4" style="styleCheckBox"/>
+                <Control width="1" bkcolor="#FFFF00FF" />
+                <CheckBox name="cradioTest" text="单选框" style="styleRadio"/>
+                <CheckBox name="cradioTest1" text="单选框1" style="styleRadio"/>
+                <CheckBox name="cradioTest2" text="单选框2" style="styleRadio"/>
+                <CheckBox name="cradioTest3" text="单选框3" style="styleRadio"/>
+                <CheckBox name="cradioTest4" text="单选框4" style="styleRadio"/>
+            </HorizontalLayout><!--======================================================================CheckBox-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+            
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--Combo-->
+                <Combo name="comboTest" style="styleCombo"  dropbox="bordersize=&quot;1&quot; bordercolor=&quot;#ff00BFFF&quot; vscrollbar=&quot;true&quot;" dropboxsize="150,90" itemvalign="vcenter" itemtextpadding="10,0,0,0" itemfont="1" showshadow="true">
+                    <ListLabelElement width="150" height="30" text="简体中文" selected="true"/>
+                    <ListLabelElement height="30" text="繁体中文" />
+                    <ListLabelElement height="30" text="华文形楷" />
+                    <ListLabelElement height="30" text="艺术圆体" />
+                </Combo>
+            </HorizontalLayout><!--=====================================================================Combo-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+
+            <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--GroupBox-->
+                <GroupBox name="gbTest" text="GroupBox布局不完全,只能控件float在上面" width="400" height="50" textcolor="#FF000000" bordercolor="#FF111111" bordersize="1" borderround="6,6" showshadow="true"/>
+            </HorizontalLayout>                                                                     <!--GroupBox-->
+            <Control height="1" bkcolor="#ffFF00FF"/>
+        </VerticalLayout>
+
+    </HorizontalLayout>
+    <!--客户端-->
+</Window>

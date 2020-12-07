@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Frame">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{eadaf134-3ace-454d-9d29-868bb0f01fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\skin">
+      <UniqueIdentifier>{3b4f6270-a483-4ba6-8a04-cb8fbb632921}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControlDemo.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Duilib.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PageControl.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSenior.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageExtand.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageActiveX.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinFrame.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="PopFrame.h">
+      <Filter>Frame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlDemo.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PageControl.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSenior.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageExtand.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageActiveX.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinFrame.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="PopFrame.cpp">
+      <Filter>Frame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ControlDemo.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Debug\skin\duilib.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageBase.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageSenior.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\listItem.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageExtand.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\menu.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageActiveX.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\skin.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\popWnd.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\chinese.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\english.xml">
+      <Filter>资源文件\skin</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Debug\skin\ControlDemo.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="300, 260" caption="0,0,0,40" sizebox="4,4" showshadow="ture"  shadowcolor="#ffFF00FF" shadowsize="6" shadowcorner="6,6,6,6">
+    <VerticalLayout name="vtlFrame" bkcolor="#FF00FFFF"><!--框架-->
+        <HorizontalLayout height="40" name="hzlCaption" bkcolor="#ff187de2" childalign="right" childvalign="top"><!--标题栏-->
+            <FadeButton name="minbtn"  width="28" height="20" tooltip="最小化" shortcut="6" normalimage="res=&apos;sysbtn/btn_mini_normal.png&apos; hsl=&apos;true&apos;" hotimage="file='sysbtn/btn_mini_highlight.png'" pushedimage="file='sysbtn/btn_mini_down.png' "/>
+            <FadeButton name="maxbtn"  width="28" height="20" tooltip="最大化" normalimage="file='sysbtn/btn_max_normal.png'" hotimage="file='sysbtn/btn_max_highlight.png'" pushedimage="file='sysbtn/btn_max_down.png' "/>
+            <FadeButton name="restorebtn" width="28" height="20" tooltip="还原" visible="false" normalimage="file='sysbtn/btn_restore_normal.png'" hotimage="file='sysbtn/btn_restore_highlight.png'" pushedimage="file='sysbtn/btn_restore_down.png' "/>
+            <FadeButton name="closebtn" width="39" height="20" tooltip="关闭" normalimage="file='sysbtn/btn_close_normal.png'" hotimage="file='sysbtn/btn_close_highlight.png'" pushedimage="file='sysbtn/btn_close_down.png' "/>            
+        </HorizontalLayout><!--===============================标题栏-->
+
+    </VerticalLayout>
+</Window>

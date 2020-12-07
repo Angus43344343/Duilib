@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Res>
+    <Text id="lsBaseControl" value="基础控件" />
+    <Text id="lsListControl" value="表格控件" />
+    <Text id="lsExtandControl" value="扩展控件" />
+    <Text id="lsActiveXControl" value="ActiveX控件"/>
+    <Text id="lsLanguageSwitch" value="语言切换"/>
+    <Text id="lsAutoOne" value="一级动态" />
+</Res>

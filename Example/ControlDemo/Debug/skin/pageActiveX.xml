@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+    <VerticalLayout vscrollbar="true">
+        <HorizontalLayout height="300" childvalign="vcenter" inset="2,0,2,2" vscrollbar="true" hscrollbar="true"><!--ActiveX-->
+            <Label name="lbltest22" text="ActiveX测试：" style="styleLabel"/>
+            <Control width="1" bkcolor="#ffFF00FF" padding="0,0,10,0"/>
+            <ActiveX name="flashTest1" clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}" width="400" height="280" mouse="false"/>
+            <Flash name="flashTest2" width="400" height="280" mouse="false"/><!--Flash-->
+        </HorizontalLayout>                                                                                     <!--ActiveX-->
+        <Control height="1" bkcolor="#ffFF00FF"/>
+        
+        <HorizontalLayout height="500" childvalign="vcenter" inset="2,0,2,2" vscrollbar="true" hscrollbar="true"><!--Flash透明背景-->
+            <Label name="lbltest22" text="flash透明背景测试：" style="styleLabel"/>
+            <Control width="1" bkcolor="#ffFF00FF" padding="0,0,10,0"/>
+            <ActiveX name="flashTest" clsid="{D27CDB6E-AE6D-11CF-96B8-444553540000}"  width="640" height="480" mouse="false"/>
+            
+            <VerticalLayout bkcolor="00FFFFFF" childpadding="20" childalign="center" float="true" pos="132,9" width="640" height="480">
+                <Button name="btnInfo" text="flash透明背景测试" width="210" height="30" bkcolor="#ffFFE4C4" hotbkcolor="#ffFAEBD7" pushedbkcolor="#ffF8F8FF"/>
+                <Edit name="EditTest11" style="styleEdit" tipvalue="提示文字测试" />
+                <RichEdit name="reditTest11" style="styleRichEdit" tipvalue="输入密码" password="true" passwordchar="*"/>
+
+                <Combo name="comboTest11" style="styleCombo"  dropbox="bordersize=&quot;1&quot; bordercolor=&quot;#ff00BFFF&quot; vscrollbar=&quot;true&quot;" dropboxsize="150,90" itemvalign="vcenter" itemtextpadding="10,0,0,0" showshadow="true">
+                    <ListLabelElement width="150" height="30" text="简体中文" selected="true"/>
+                    <ListLabelElement height="30" text="繁体中文" />
+                    <ListLabelElement height="30" text="华文形楷" />
+                    <ListLabelElement height="30" text="艺术圆体" />
+                </Combo>
+                <Control />
+            </VerticalLayout>    
+        </HorizontalLayout>                                                                                    <!--Flash透明背景-->
+        <Control height="1" bkcolor="#ffFF00FF"/>
+
+        <HorizontalLayout height="400" childvalign="vcenter" inset="2,0,2,2" vscrollbar="true" hscrollbar="true"><!--WebBrowser-->
+            <Label name="lbltest22" text="ActiveX测试：" style="styleLabel"/>
+            <Control width="1" bkcolor="#ffFF00FF" />
+            <WebBrowser name="webTest" homepage="about:blank" autonavi="true" delaycreate="false"/>
+        </HorizontalLayout>                                                                                      <!--WebBrowser-->
+        <Control height="1" bkcolor="#ffFF00FF"/>
+        
+    </VerticalLayout>
+</Window>

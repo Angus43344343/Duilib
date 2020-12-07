@@ -1,0 +1,230 @@
+1、加载图片Load()：bool Load(const TCHAR* filename, uint32_t imagetype=0);
+
+参数1:图片名字
+参数2:图片格式(下面列举）
+
+以下是所有类型枚举：
+----------------------------------------------------------------------------------
+enum ENUM_CXIMAGE_FORMATS{
+CXIMAGE_FORMAT_UNKNOWN = 0,
+#if CXIMAGE_SUPPORT_BMP
+CXIMAGE_FORMAT_BMP = 1,
+#endif
+#if CXIMAGE_SUPPORT_GIF
+CXIMAGE_FORMAT_GIF = 2,
+#endif
+#if CXIMAGE_SUPPORT_JPG
+CXIMAGE_FORMAT_JPG = 3,
+#endif
+#if CXIMAGE_SUPPORT_PNG
+CXIMAGE_FORMAT_PNG = 4,
+#endif
+#if CXIMAGE_SUPPORT_ICO
+CXIMAGE_FORMAT_ICO = 5,
+#endif
+#if CXIMAGE_SUPPORT_TIF
+CXIMAGE_FORMAT_TIF = 6,
+#endif
+#if CXIMAGE_SUPPORT_TGA
+CXIMAGE_FORMAT_TGA = 7,
+#endif
+#if CXIMAGE_SUPPORT_PCX
+CXIMAGE_FORMAT_PCX = 8,
+#endif
+#if CXIMAGE_SUPPORT_WBMP
+CXIMAGE_FORMAT_WBMP = 9,
+#endif
+#if CXIMAGE_SUPPORT_WMF
+CXIMAGE_FORMAT_WMF = 10,
+#endif
+#if CXIMAGE_SUPPORT_JP2
+CXIMAGE_FORMAT_JP2 = 11,
+#endif
+#if CXIMAGE_SUPPORT_JPC
+CXIMAGE_FORMAT_JPC = 12,
+#endif
+#if CXIMAGE_SUPPORT_PGX
+CXIMAGE_FORMAT_PGX = 13,
+#endif
+#if CXIMAGE_SUPPORT_PNM
+CXIMAGE_FORMAT_PNM = 14,
+#endif
+#if CXIMAGE_SUPPORT_RAS
+CXIMAGE_FORMAT_RAS = 15,
+#endif
+#if CXIMAGE_SUPPORT_JBG
+CXIMAGE_FORMAT_JBG = 16,
+#endif
+#if CXIMAGE_SUPPORT_MNG
+CXIMAGE_FORMAT_MNG = 17,
+#endif
+#if CXIMAGE_SUPPORT_SKA
+CXIMAGE_FORMAT_SKA = 18,
+#endif
+#if CXIMAGE_SUPPORT_RAW
+CXIMAGE_FORMAT_RAW = 19,
+#endif
+#if CXIMAGE_SUPPORT_PSD
+CXIMAGE_FORMAT_PSD = 20,
+#endif
+CMAX_IMAGE_FORMATS = CXIMAGE_SUPPORT_BMP + CXIMAGE_SUPPORT_GIF + CXIMAGE_SUPPORT_JPG +
+					 CXIMAGE_SUPPORT_PNG + CXIMAGE_SUPPORT_MNG + CXIMAGE_SUPPORT_ICO +
+					 CXIMAGE_SUPPORT_TIF + CXIMAGE_SUPPORT_TGA + CXIMAGE_SUPPORT_PCX +
+					 CXIMAGE_SUPPORT_WBMP+ CXIMAGE_SUPPORT_WMF +
+					 CXIMAGE_SUPPORT_JBG + CXIMAGE_SUPPORT_JP2 + CXIMAGE_SUPPORT_JPC +
+					 CXIMAGE_SUPPORT_PGX + CXIMAGE_SUPPORT_PNM + CXIMAGE_SUPPORT_RAS +
+					 CXIMAGE_SUPPORT_SKA + CXIMAGE_SUPPORT_RAW + CXIMAGE_SUPPORT_PSD + 1
+-------------------------------------------------------------------------------------------------------------
+
+2、保存图片：bool Save(const TCHAR* filename, uint32_t imagetype);
+
+参数以及格式与加载图片一模一样，可参考上面。
+
+3、得到图形大小：long GetSize();
+
+4、得到图形高度和宽度：
+
+DWORD CxImage::GetHeight();
+DWORD CxImage::GetWidth();
+1
+2
+5、得到文件类型：DWORD CxImage::GetType() const;
+
+6、得到最后一个错误：char* CxImage::GetLastError();
+
+7、在界面中绘制出来
+
+long CxImage::Draw(HDC hdc, const RECT& rect, RECT* pClipRect=NULL)
+1
+参数：
+HDC 绘图设备，
+rect 绘图的区域，确定绘图的左上角和右下角坐标。
+pClipRect，裁剪区域，一般可以和绘图区域一样大小
+1
+2
+3
+4
+8、图片处理，提高图片质量
+
+bool Filter(int32_t* kernel, int32_t Ksize, int32_t Kfactor, int32_t Koffset);
+1
+9、copy图片：
+
+void	Copy(const CxImage &src, bool copypixels = true, bool copyselection = true, bool copyalpha = true);
+1
+10、自定义图片大小（缩放）：
+
+Resample(int32_t newx, int32_t newy, int32_t mode = 1, CxImage* iDst = NULL);
+1
+11、调整图片饱和度：
+
+bool Saturate(const int32_t saturation, const int32_t colorspace = 1);
+1
+12、图像灰度化：
+
+bool GrayScale();
+1
+13、图片上下翻转：
+
+bool Flip(bool bFlipSelection = false, bool bFlipAlpha = true);
+1
+14、图片左右翻转：
+
+bool Mirror(bool bMirrorSelection = false, bool bMirrorAlpha = true);
+1
+15、图片颜色取反（255-原值）：
+
+bool Negative();
+1
+16、图片二值化;
+
+	bool Threshold(uint8_t level);
+	bool Threshold(CxImage* pThresholdMask);
+1
+2
+17、converts the image to B&W using the desired method ；
+
+bool Dither(int32_t method = 0);
+1
+18、自适应阈值：
+
+bool AdaptiveThreshold(int32_t method = 0, int32_t nBoxSize = 64, CxImage* pContrastMask = 0, int32_t nBias = 0, float fGlobalLocalBalance = 0.5f);
+1
+19、膨胀：
+
+bool Dilate(int32_t Ksize=2);
+1
+20、腐蚀：
+
+bool Erode(int32_t Ksize=2);
+1
+21、IsValid检查图片是否正确初始化：
+
+bool IsValid() const;
+1
+22、light图像亮度和对比度调整:
+
+bool Light(int32_t brightness, int32_t contrast = 0);
+1
+23、设置像素颜色值
+
+void	SetPixelColor(int32_t x,int32_t y,RGBQUAD c, bool bSetAlpha = false);
+void	SetPixelColor(int32_t x,int32_t y,COLORREF cr);
+1
+2
+几个函数的实现：
+
+WORD CxImage::GetBpp() const return: 1, 4, 8, 24. 每像素所占得字节数
+{
+return head.biBitCount;
+}
+
+
+DWORD CxImage::GetEffWidth() const return DWORD aligned width of the image. 每行所站的字节数
+
+{
+return info.dwEffWidth;
+}
+
+
+DWORD CxImage::GetNumColors() const return 2, 16, 256; 0 for RGB images.  
+{
+return head.biClrUsed;
+}
+
+
+DWORD CxImage::GetWidth() const   获得图像的宽
+{
+return head.biWidth;
+}
+
+
+DWORD CxImage::GetHeight() const   获得图像的高
+{
+return head.biHeight;
+}
+
+
+void* CxImage::GetDIB() const return internal hDib object 指向DIB对象，即是指向图像
+{
+return pDib;
+}
+
+
+long CxImage::GetSize()return the size in bytes of the internal pDib object返回在内部pDib对象的字节大小   就是信息头，调色板，位图数据的大小。
+{
+return head.biSize + head.biSizeImage + GetPaletteSize();
+}
+
+bool CxImage ::Light (long brightness , long contrast )
+{
+       if (! pDib) return false;
+       float c=(100 + contrast)/100.0f;
+       brightness+=128;
+
+       BYTE cTable[256]; //<nipper>
+       for ( int i=0; i<256; i++) {
+             cTable[ i] = ( BYTE) max(0, min(255,( int)(( i-128)* c + brightness + 0.5f)));
+      }
+      return Lut( cTable);
+}

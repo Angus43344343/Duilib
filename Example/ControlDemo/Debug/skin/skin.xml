@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="162, 136">
+    <style name="styleImage" value="hotimage=&quot;res='sysbtn/small/skin_mouseover.png' corner='2,2,2,2'&quot; pushedimage=&quot;res='sysbtn/small/skin_mouseover.png' corner='2,2,2,2'&quot;"/>
+    
+    <VerticalLayout name="vtlSkinFrame" bkcolor="#ffF0FFFF" inset="4,4,4,4">
+        <HorizontalLayout name="hzlTabSkin" height="22">
+            <Control />
+            <Option name="optBkImage" group="hzlTabSkin" tooltip="背景图片" width="26" height="22" normalimage="res=&apos;sysbtn/small/image_btn.png&apos; source=&apos;0,0,26,22&apos;" hotimage="res=&apos;sysbtn/small/image_btn.png&apos; source=&apos;26,0,52,22&apos;" selectedimage="res=&apos;sysbtn/small/image_btn.png&apos; source=&apos;52,0,78,22&apos;" selected="true"/>
+            <Option name="optBkColor" group="hzlTabSkin" tooltip="背景颜色" width="26" height="22" normalimage="res=&apos;sysbtn/small/color_btn.png&apos; source=&apos;0,0,26,22&apos;" hotimage="res=&apos;sysbtn/small/color_btn.png&apos; source=&apos;26,0,52,22&apos;" selectedimage="res=&apos;sysbtn/small/color_btn.png&apos; source=&apos;52,0,78,22&apos;"/>
+        </HorizontalLayout>
+        
+        <AnimationTabLayout name="aTabSkinLayout">
+            <TileLayout name="tlytImage" itemsize="28,40" padding="0,12" childpadding="6"><!--Page1-->
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/0.png" userdata="sysbtn/big/0.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/1.png" userdata="sysbtn/big/1.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/2.png" userdata="sysbtn/big/2.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/3.png" userdata="sysbtn/big/3.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/4.png" userdata="sysbtn/big/4.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/5.png" userdata="sysbtn/big/5.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/6.png" userdata="sysbtn/big/6.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/7.png" userdata="sysbtn/big/7.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/8.png" userdata="sysbtn/big/8.jpg"/>
+                <FadeButton name="fbtnImage" style="styleImage" bkimage="sysbtn/small/9.png" userdata="sysbtn/big/9.jpg"/>
+            </TileLayout>
+
+            <TileLayout name="tlytColor" itemsize="22,22" padding="0,12" childpadding="6"><!--Page2-->
+                <FadeButton name="fbtnColor" bkcolor="#FF66BAEB" normalimage="res=&apos;sysbtn/small/colour_001.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_001highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_001.bmp&apos;" />
+                <FadeButton name="fbtnColor" bkcolor="#FFA138D8" normalimage="res=&apos;sysbtn/small/colour_002.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_002highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_002.bmp&apos;" />
+                <FadeButton name="fbtnColor" bkcolor="#FFA138D8" normalimage="res=&apos;sysbtn/small/colour_003.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_003highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_003.bmp&apos;" />
+                <FadeButton name="fbtnColor" bkcolor="#FF6EC446" normalimage="res=&apos;sysbtn/small/colour_004.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_004highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_004.bmp&apos;" />
+                <FadeButton name="fbtnColor" bkcolor="#FFD08942" normalimage="res=&apos;sysbtn/small/colour_005.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_005highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_005.bmp&apos;" />    
+                <FadeButton name="fbtnColor" bkcolor="#FFC55C3C" normalimage="res=&apos;sysbtn/small/colour_006.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_006highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_006.bmp&apos;" />
+                <FadeButton name="fbtnColor" bkcolor="#FFC13892" normalimage="res=&apos;sysbtn/small/colour_007.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_007highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_007.bmp&apos;" />
+                <FadeButton name="fbtnColor" bkcolor="#FF929292" normalimage="res=&apos;sysbtn/small/colour_008.bmp&apos;" hotimage="res=&apos;sysbtn/small/colour_008highlight.bmp&apos;" pushedimage="res=&apos;sysbtn/small/colour_008.bmp&apos;" />
+            </TileLayout>
+            
+        </AnimationTabLayout>     
+    </VerticalLayout>
+</Window>

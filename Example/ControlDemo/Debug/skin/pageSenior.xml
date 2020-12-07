@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+    <Style name="styleLabel" shared="true" value="width=&quot;120&quot; align=&quot;right&quot; valign=&quot;vcenter&quot;"/>
+    <Style name="styleLHItem" shared="true" value="width=&quot;120&quot; dragable=&quot;true&quot; sepwidth=&quot;1&quot; sepimage=&quot;res=&apos;list/list_header_sep.png&apos;&quot; normalimage=&quot;res=&apos;list/list_header_bg.png&apos; corner=&apos;2,2,2,2&apos;&quot; hotimage=&quot;res=&apos;list/list_header_hot.png&apos; corner=&apos;2,2,2,2&apos;&quot; pushedimage=&quot;res=&apos;list/list_header_pushed.png&apos; corner=&apos;2,2,2,2&apos;&quot;"/>
+    <Style name="styleList" shared="true" value="inset=&quot;0,2,0,0&quot; scale=&quot;80&quot; multiselect=&quot;true&quot; itemrselected=&quot;true&quot; bordersize=&quot;1&quot; bordercolor=&quot;#ffDCDCDC&quot; itemalign=&quot;center&quot; itemvalign=&quot;vcenter&quot; itemshowrowline=&quot;true&quot; itemshowcolumnline=&quot;true&quot; itemlinecolor=&quot;#ffDCDCDC&quot;"/>
+    <Style name="styleListCheck" shared="true" value="checkboxwidth=&quot;17&quot; checkboxheight=&quot;17&quot; checkboxnormalimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;0,0,17,17&apos; corner=&apos;2,2,2,2&apos;&quot; checkboxhotimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;17,0,34,17&apos; corner=&apos;2,2,2,2&apos;&quot; checkboxpushedimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;34,0,51,17&apos; corner=&apos;2,2,2,2&apos;&quot; checkboxselectedimage=&quot;res=&apos;checkbox/checkbox.png&apos; source=&apos;51,0,68,17&apos; corner=&apos;2,2,2,2&apos;&quot;"/>
+    <Style name="styleListCombo" shared="true" value="itemalign=&quot;center&quot; itemvalign=&quot;vcenter&quot; "/>   
+    
+    <VerticalLayout vscrollbar="true">
+        <HorizontalLayout height="300" childvalign="vcenter" inset="2,0,2,2" hscrollbar="true">
+            <Label name="lbltest21" text="list测试：" style="styleLabel"/>
+            <Control width="1" bkcolor="#ffFF00FF" padding="0,0,10,0"/>
+            
+            <List name="listTest" inset="0,2,0,0" width="480" heigth="210" vscrollbar="true" style="styleList" itemshowhtml="true">
+                <ListHeader name="lheaderTest" height="30" inset="1,0,1,0">
+                    <ListHeaderItem name="lhitemTest" text="序号" style="styleLHItem"/>
+                    <ListHeaderItem name="lhitemTest1" text="姓名" style="styleLHItem"/>
+                    <ListHeaderItem name="lhitemTest2" text="性别" style="styleLHItem"/>
+                    <ListHeaderItem name="lhitemTest3" text="数学" style="styleLHItem"/>
+                </ListHeader>
+            </List>
+            
+            <List name="listTest1" inset="0,2,0,0" width="480" heigth="210" vscrollbar="true" style="styleList" padding="20,0,10,0" itemshowhtml="true">
+                <ListHeader name="lheaderTest1" height="30" inset="1,0,1,0" scaleheader="true">
+                    <ListHeaderItem name="lhitemTest4" text="序号" style="styleLHItem" scale="12"/>
+                    <ListHeaderItem name="lhitemTest5" text="姓名" style="styleLHItem" scale="60"/>
+                    <ListHeaderItem name="lhitemTest6" text="性别" style="styleLHItem" scale="20"/>
+                    <ListHeaderItem name="lhitemTest7" text="数学" style="styleLHItem" scale="10"/>
+                </ListHeader>
+            </List>               
+        </HorizontalLayout>
+        <Control height="1" bkcolor="#ffFF00FF"/>
+
+        <HorizontalLayout height="300" childvalign="vcenter" inset="2,0,2,2" hscrollbar="true">
+            <Label name="lbltest22" text="listEx测试：" style="styleLabel"/>
+            <Control width="1" bkcolor="#ffFF00FF" padding="0,0,10,0"/>
+
+            <ListEx name="listExTest1" inset="0,2,0,0" width="480" heigth="210" vscrollbar="true" style="styleList" itemshowhtml="true">
+                <ListHeader name="lheaderTest2" height="30" inset="1,0,1,0">
+                    <ListContainerHeaderItem name="lchitemTest8"  text="序号" style="styleLHItem" checkable="true" innerstyle="styleListCheck" />
+                    <ListContainerHeaderItem name="lchitemTest9" text="姓名" style="styleLHItem" editable="true"/>
+                    <ListContainerHeaderItem name="lchitemTest10" text="性别" style="styleLHItem" comboable="true"/>
+                    <ListContainerHeaderItem name="lchitemTest11" text="数学" style="styleLHItem"/>
+                </ListHeader>
+            </ListEx>
+
+            <ListEx name="listExTest2" inset="0,2,0,0" width="480" heigth="210" vscrollbar="true" style="styleList" padding="20,0,10,0">
+                <ListHeader name="lheaderTest3" height="30" inset="1,0,1,0">
+                    <ListContainerHeaderItem name="lchitemTest12"  text="序号" style="styleLHItem" width="240"/>
+                    <ListContainerHeaderItem name="lchitemTest13" text="姓名" style="styleLHItem" width="240"/>
+                </ListHeader>
+                <Include source="listItem.xml" />
+            </ListEx>
+            
+        </HorizontalLayout>
+        <Control height="1" bkcolor="#ffFF00FF"/>
+
+    </VerticalLayout>
+</Window>

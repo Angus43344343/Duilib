@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="960,680" caption="0,0,0,40" sizebox="4,4,6,6" roundcorner="0,0" bktrans="false" showshadow="true" shadowcolor="#ffFF00FF" shadowsize="6" shadowcorner="8,8,8,8">
+    <Import fontfile="金梅浪漫白立體.ttf" />
+    <Font shared="true" id="0" name="宋体" size="13" default="true"/>
+    <Font shared="true" id="1" name="宋体" size="18" bold="false" underline="true"/>
+    <Font shared="true" id="2" name="金梅浪漫白立體" size="20" underline="true"/>
+
+    <!--滚动条-->
+    <Default name="VScrollBar" shared="true" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='common/vscrollbar.png' source='0,60,8,100' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='common/vscrollbar.png' source='8,60,16,100' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='common/vscrollbar.png' source='16,60,24,100' corner='0,4,0,4'&quot; railnormalimage=&quot;&quot; railhotimage=&quot;&quot; railpushedimage=&quot;&quot; raildisabledimage=&quot;&quot; bknormalimage=&quot;file='common/vscrollbar.png' source='0,0,8,60' corner='0,4,0,4'&quot; bkhotimage=&quot;&quot; bkpushedimage=&quot;&quot; bkdisabledimage=&quot;&quot; "/>
+    <Default name="HScrollBar" shared="true" value="height=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='common/hscrollbar.png' source='0,0,32,8' corner='4,0,4,0'&quot; thumbhotimage=&quot;file='common/hscrollbar.png' source='0,8,32,16' corner='4,0,4,0'&quot; thumbpushedimage=&quot;file='common/hscrollbar.png' source='0,16,32,24' corner='4,0,4,0'&quot; railnormalimage=&quot;&quot; railhotimage=&quot;&quot; railpushedimage=&quot;&quot; raildisabledimage=&quot;&quot; bknormalimage=&quot;file='common/hscrollbar.png' source='0,0,32,8' corner='4,0,4,0'&quot; bkhotimage=&quot;&quot; bkpushedimage=&quot;&quot; bkdisabledimage=&quot;&quot; "/>
+    
+    <Style name="styleOption" shared="true" value="width=&quot;118&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; bordersize=&quot;1&quot; bordercolor=&quot;#FFFFFAFA&quot; textcolor=&quot;#FFAFADAD&quot; hottextcolor=&quot;#FF000000&quot; bkcolor=&quot;#FFFFE4E1&quot; hotbkcolor=&quot;#FFF5F5F5&quot; pushedbkcolor=&quot;#FFF5F5F5&quot; selectedbkcolor=&quot;#FFFFF8DC&quot; group=&quot;tabGroup&quot;"/>
+    
+    <VerticalLayout name="vltRoot" bkcolor="#ffFFF5EE" ><!--整体框架-->    
+        <HorizontalLayout height="40" childalign="right" childvalign="top" >     <!--标题栏-->
+            <FadeButton name="btnSkin" width="28" height="20" tooltip="皮肤" normalimage="res=&apos;sysbtn/btn_Skin_normal.png&apos;" hotimage="res=&apos;sysbtn/btn_Skin_highlight.png&apos;" pushedimage="res=&apos;sysbtn/btn_Skin_down.png&apos;"/>
+            <FadeButton name="btnMenu" width="28" height="20" tooltop="菜单" normalimage="res=&apos;sysbtn/btn_menu_normal.png&apos;" hotimage="res=&apos;sysbtn/btn_menu_highlight.png&apos;" pushedimage="res=&apos;sysbtn/btn_menu_down.png&apos;"/>
+            <FadeButton name="minbtn"  width="28" height="20" tooltip="最小化" shortcut="6" normalimage="res=&apos;sysbtn/btn_mini_normal.png&apos; hsl=&apos;true&apos;" hotimage="file='sysbtn/btn_mini_highlight.png'" pushedimage="file='sysbtn/btn_mini_down.png' "/>
+            <FadeButton name="maxbtn"  width="28" height="20" tooltip="最大化" normalimage="file='sysbtn/btn_max_normal.png'" hotimage="file='sysbtn/btn_max_highlight.png'" pushedimage="file='sysbtn/btn_max_down.png' "/>
+            <FadeButton name="restorebtn" width="28" height="20" tooltip="还原" visible="false" normalimage="file='sysbtn/btn_restore_normal.png'" hotimage="file='sysbtn/btn_restore_highlight.png'" pushedimage="file='sysbtn/btn_restore_down.png' "/>
+            <FadeButton name="closebtn" width="39" height="20" tooltip="关闭" normalimage="file='sysbtn/btn_close_normal.png'" hotimage="file='sysbtn/btn_close_highlight.png'" pushedimage="file='sysbtn/btn_close_down.png' "/>
+        </HorizontalLayout>                                                                         <!--标题栏-->
+        <Control height="1" bkcolor="#ffFF00FF"/>
+
+        <HorizontalLayout name="tabGroup" height="30" childalign="center" childvalign="vcenter" >
+            <Option name="optionControl" text="lsBaseControl" resourcetext="true" style="styleOption" selected="true"/>
+            <Option name="optionList" text="lsListControl" resourcetext="true" style="styleOption" />
+            <Option name="optionExtand" text="lsExtandControl" resourcetext="true" style="styleOption" />
+            <Option name="optionActiveX" text="lsActiveXControl" resourcetext="true" style="styleOption" />
+        </HorizontalLayout>
+        <Control height="1" bkcolor="#ffFF00FF"/>
+
+        <AnimationTabLayout name="aTabLayout" animation_direction="horizontal" > <!--客户端-->
+            <VerticalLayout virtualwnd="pageBase">
+                <Include source="pageBase.xml" />
+            </VerticalLayout>
+            
+            <VerticalLayout virtualwnd="pageSenior">
+                <Include source="pageSenior.xml" />
+            </VerticalLayout>
+            
+            <VerticalLayout virtualwnd="pageExtand">
+                <Include source="pageExtand.xml" />
+            </VerticalLayout>
+
+            <VerticalLayout virtualwnd="pageActiveX">
+                <Include source="pageActiveX.xml" />
+            </VerticalLayout>
+        </AnimationTabLayout><!--客户端-->
+
+    </VerticalLayout><!--整体框架-->
+</Window>

@@ -1,0 +1,33 @@
+﻿生成启动时间为 2020/12/5 16:00:51。
+     1>项目“E:\git\Duilib\Example\ControlDemo\ControlDemo\ControlDemo.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\vs2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\ControlDemo.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ControlDemo.cpp main.cpp PageActiveX.cpp PageControl.cpp PageExtand.cpp PageSenior.cpp PopFrame.cpp SkinFrame.cpp
+         ControlDemo.cpp
+         main.cpp
+         PageActiveX.cpp
+         PageControl.cpp
+         PageExtand.cpp
+         PageSenior.cpp
+         PopFrame.cpp
+         SkinFrame.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\ControlDemo.res" ControlDemo.rc 
+       Link:
+         E:\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git\Duilib\Duilib\Release\ControlDemo.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\git\Duilib\Duilib\Release\ControlDemo.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git\Duilib\Duilib\Release\ControlDemo.lib" /MACHINE:X86 /SAFESEH Release\ControlDemo.res
+         Release\ControlDemo.obj
+         Release\main.obj
+         Release\PageActiveX.obj
+         Release\PageControl.obj
+         Release\PageExtand.obj
+         Release\PageSenior.obj
+         Release\PopFrame.obj
+         Release\SkinFrame.obj
+         Release\stdafx.obj
+         正在生成代码
+         已完成代码的生成
+         ControlDemo.vcxproj -> E:\git\Duilib\Duilib\Release\ControlDemo.exe
+     1>已完成生成项目“E:\git\Duilib\Example\ControlDemo\ControlDemo\ControlDemo.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.59

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+    <ListContainerElement height="30" childvalign="vcenter">
+        <HorizontalLayout childpadding="10" childvalign="vcenter">
+            <Label name="lblList" text="三个愿望" width="100" align="center" valign="vcenter" textpadding="10,0,0,0"/>
+            <Button  width="117" height="20" text="状态色测试" bkcolor="#ffFFE4C4" hotbkcolor="#ffFAEBD7" pushedbkcolor="#ffF8F8FF" disabledbkcolor="#ffF5F5F5"/>
+        </HorizontalLayout>
+        <Label text="完成任务" align="center" valign="vcenter" textpadding="10,0,0,0"/>
+    </ListContainerElement>
+
+    <ListContainerElement height="30" childvalign="vcenter">
+        <HorizontalLayout childpadding="10" childvalign="vcenter">
+            <Label text="三个愿望" width="100" align="center" valign="vcenter" textpadding="10,0,0,0"/>
+            <Button  width="117" height="20" text="状态色测试" bkcolor="#ffFFE4C4" hotbkcolor="#ffFAEBD7" pushedbkcolor="#ffF8F8FF" disabledbkcolor="#ffF5F5F5"/>
+        </HorizontalLayout>
+        <Label text="完成任务" align="center" valign="vcenter" textpadding="10,0,0,0"/>
+    </ListContainerElement>
+</Window>

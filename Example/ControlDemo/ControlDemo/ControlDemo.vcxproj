@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C450CF2-C501-4C92-8CD4-676ED8E95018}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ControlDemo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\git\Duilib\Duilib;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\git\Duilib\Duilib\Lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>E:\git\Duilib\Duilib;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\git\Duilib\Duilib\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControlDemo.h" />
+    <ClInclude Include="Duilib.h" />
+    <ClInclude Include="PageActiveX.h" />
+    <ClInclude Include="PageControl.h" />
+    <ClInclude Include="PageExtand.h" />
+    <ClInclude Include="PageSenior.h" />
+    <ClInclude Include="PopFrame.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SkinFrame.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ControlDemo.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PageActiveX.cpp" />
+    <ClCompile Include="PageControl.cpp" />
+    <ClCompile Include="PageExtand.cpp" />
+    <ClCompile Include="PageSenior.cpp" />
+    <ClCompile Include="PopFrame.cpp" />
+    <ClCompile Include="SkinFrame.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ControlDemo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Debug\skin\chinese.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\duilib.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\english.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\listItem.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\menu.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageActiveX.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageBase.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageExtand.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageSenior.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\popWnd.xml" />
+    <Xml Include="..\Debug\skin\skin.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Debug\skin\ControlDemo.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

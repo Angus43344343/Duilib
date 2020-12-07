@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Res>
+    <Text id="lsBaseControl" value="Base Control" />
+    <Text id="lsListControl" value="List Control" />
+    <Text id="lsExtandControl" value="Extand Control" />
+    <Text id="lsActiveXControl" value="ActiveX Control" />
+    <Text id="lsLanguageSwitch" value="Language Switch" />
+    <Text id="lsAutoOne" value="AutoOne" />
+</Res>
