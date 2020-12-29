@@ -2566,6 +2566,12 @@ namespace DuiLib {
 				}
 				return;
 			}
+			//zm
+			else if (!m_pOwner->GetListInfo()->bRSelected && event.Type == UIEVENT_RBUTTONUP)
+			{
+				if (IsEnabled()) m_pManager->SendNotify(this, DUI_MSGTYPE_ITEMRCLICK, GetIndex(), HitTestColum(event.ptMouse));//zm
+			}
+			//zm
 		}
 
 		if( event.Type == UIEVENT_BUTTONDOWN )

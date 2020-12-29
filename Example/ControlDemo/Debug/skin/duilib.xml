@@ -12,14 +12,14 @@
     <Style name="styleOption" shared="true" value="width=&quot;118&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; bordersize=&quot;1&quot; bordercolor=&quot;#FFFFFAFA&quot; textcolor=&quot;#FFAFADAD&quot; hottextcolor=&quot;#FF000000&quot; bkcolor=&quot;#FFFFE4E1&quot; hotbkcolor=&quot;#FFF5F5F5&quot; pushedbkcolor=&quot;#FFF5F5F5&quot; selectedbkcolor=&quot;#FFFFF8DC&quot; group=&quot;tabGroup&quot;"/>
     
     <VerticalLayout name="vltRoot" bkcolor="#ffFFF5EE" ><!--整体框架-->    
-        <HorizontalLayout height="40" childalign="right" childvalign="top" >     <!--标题栏-->
+        <HorizontalLayout height="40" childalign="right" childvalign="top" ><!--标题栏-->
             <FadeButton name="btnSkin" width="28" height="20" tooltip="皮肤" normalimage="res=&apos;sysbtn/btn_Skin_normal.png&apos;" hotimage="res=&apos;sysbtn/btn_Skin_highlight.png&apos;" pushedimage="res=&apos;sysbtn/btn_Skin_down.png&apos;"/>
             <FadeButton name="btnMenu" width="28" height="20" tooltop="菜单" normalimage="res=&apos;sysbtn/btn_menu_normal.png&apos;" hotimage="res=&apos;sysbtn/btn_menu_highlight.png&apos;" pushedimage="res=&apos;sysbtn/btn_menu_down.png&apos;"/>
             <FadeButton name="minbtn"  width="28" height="20" tooltip="最小化" shortcut="6" normalimage="res=&apos;sysbtn/btn_mini_normal.png&apos; hsl=&apos;true&apos;" hotimage="file='sysbtn/btn_mini_highlight.png'" pushedimage="file='sysbtn/btn_mini_down.png' "/>
             <FadeButton name="maxbtn"  width="28" height="20" tooltip="最大化" normalimage="file='sysbtn/btn_max_normal.png'" hotimage="file='sysbtn/btn_max_highlight.png'" pushedimage="file='sysbtn/btn_max_down.png' "/>
             <FadeButton name="restorebtn" width="28" height="20" tooltip="还原" visible="false" normalimage="file='sysbtn/btn_restore_normal.png'" hotimage="file='sysbtn/btn_restore_highlight.png'" pushedimage="file='sysbtn/btn_restore_down.png' "/>
             <FadeButton name="closebtn" width="39" height="20" tooltip="关闭" normalimage="file='sysbtn/btn_close_normal.png'" hotimage="file='sysbtn/btn_close_highlight.png'" pushedimage="file='sysbtn/btn_close_down.png' "/>
-        </HorizontalLayout>                                                                         <!--标题栏-->
+        </HorizontalLayout><!--==================================================标题栏-->
         <Control height="1" bkcolor="#ffFF00FF"/>
 
         <HorizontalLayout name="tabGroup" height="30" childalign="center" childvalign="vcenter" >
@@ -27,6 +27,7 @@
             <Option name="optionList" text="lsListControl" resourcetext="true" style="styleOption" />
             <Option name="optionExtand" text="lsExtandControl" resourcetext="true" style="styleOption" />
             <Option name="optionActiveX" text="lsActiveXControl" resourcetext="true" style="styleOption" />
+            <Option name="optionRedraw" text="lsRedrawControl" resourcetext="true" style="styleOption" />
         </HorizontalLayout>
         <Control height="1" bkcolor="#ffFF00FF"/>
 
@@ -46,7 +47,11 @@
             <VerticalLayout virtualwnd="pageActiveX">
                 <Include source="pageActiveX.xml" />
             </VerticalLayout>
-        </AnimationTabLayout><!--客户端-->
 
-    </VerticalLayout><!--整体框架-->
+            <VerticalLayout virtualwnd="pageRedraw">
+                <Include source="pageRedraw.xml" />
+            </VerticalLayout>
+        </AnimationTabLayout><!--=====================================================客户端-->
+
+    </VerticalLayout><!--======================================整体框架-->
 </Window>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+    <Style name="styleLbl" shared="true" value="height=&quot;23&quot; align=&quot;center&quot; valign=&quot;vcenter&quot;"/>
+    
+    <VerticalLayout inset="4,4,4,4" bordersize="1" bordercolor="#ffB5B5B5" >
+        <HorizontalLayout chidalign="center" ><!--上部分-->
+            <Label name="lblImage" width="80" height="80"  bordersize="1" bordercolor="#ffBBFFFF"/>
+            
+            <VerticalLayout width="43" childalign="center" padding="10,0,0,0"><!--姓名-->
+                <Label width="16" heigth="16" bkimage="res=&apos;card/Virus.png&apos;"/>
+                <Label style="styleLbl" text="姓名" />
+                <Label name="lblName" style="styleLbl" />
+            </VerticalLayout>
+            
+            <VerticalLayout width="43" childalign="center" ><!--年龄-->
+                <Label width="16" heigth="16"  bkimage="res=&apos;card/WebSit.png&apos;"/>
+                <Label style="styleLbl" text="年龄" />
+                <Label name="lblAge" style="styleLbl" />
+            </VerticalLayout>
+
+            <VerticalLayout width="43" childalign="center"  ><!--性别-->
+                <Label width="16" heigth="16" bkimage="res=&apos;card/Virus.png&apos;"/>
+                <Label style="styleLbl" text="性别" />
+                <Label name="lblSex" style="styleLbl" />    
+            </VerticalLayout>
+        </HorizontalLayout>
+
+        <HorizontalLayout padding="0,10,0,0"><!--下部分-->
+            <VerticalLayout width="80"><!--ID-->
+                <Label height="45" align="center" valign="vcenter" text="ID" bordersize="1" bordercolor="#ffB5B5B5"/>
+                <Label name="lblID" height="25" align="center" valign="vcenter" bkcolor="#ffB5B5B5"/>
+            </VerticalLayout>
+            
+            <VerticalLayout  padding="10,0,0,0"><!--联系方式-->
+                <HorizontalLayout height="20"><!--出生日期-->
+                    <Label width="60" text="出生日期:"/>
+                    <Label name="lblBirthday"  />
+                </HorizontalLayout>
+
+                <HorizontalLayout height="20" padding="0,5,0,0"><!--电话-->
+                    <Label width="60" text="联系电话:"/>
+                    <Label name="lblTel" />
+                </HorizontalLayout>
+
+                <HorizontalLayout height="20" padding="0,5,0,0"><!--创建时间-->
+                    <Label width="60" text="创建时间:"/>
+                    <Label name="lblCreateTime" />
+                </HorizontalLayout>
+            </VerticalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

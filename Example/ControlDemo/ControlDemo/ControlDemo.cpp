@@ -31,6 +31,7 @@ void CControlDemo::InitWindow()
 	m_objPageSenior.SetManager(&m_pm);
 	m_objPageExtand.SetManager(&m_pm);
 	m_objPageActiveX.SetManager(&m_pm);
+	m_objPageRedraw.SetManager(&m_pm);
 
 	m_trayIcon.CreateTrayIcon(m_pm.GetPaintWindow(), IDI_FRAME, _T("Duilib控件演示"));//创建托盘图标
 }
@@ -62,6 +63,10 @@ void CControlDemo::Notify(TNotifyUI& msg)
 		else if (msg.pSender->GetName().Compare(_T("optionActiveX")) == 0)
 		{
 			pobjTabLyout->SelectItem(3);
+		}
+		else if (msg.pSender->GetName().Compare(_T("optionRedraw")) == 0)
+		{
+			pobjTabLyout->SelectItem(4);
 		}
 	}
 	else if (msg.sType == DUI_MSGTYPE_CLICK)

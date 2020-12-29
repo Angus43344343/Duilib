@@ -4,6 +4,7 @@
     <Text id="lsListControl" value="表格控件" />
     <Text id="lsExtandControl" value="扩展控件" />
     <Text id="lsActiveXControl" value="ActiveX控件"/>
+    <Text id="lsRedrawControl" value="自绘控件"/>
     <Text id="lsLanguageSwitch" value="语言切换"/>
     <Text id="lsAutoOne" value="一级动态" />
 </Res>

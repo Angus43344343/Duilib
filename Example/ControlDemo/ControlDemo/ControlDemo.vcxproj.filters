@@ -19,14 +19,23 @@
     <Filter Include="资源文件\skin">
       <UniqueIdentifier>{3b4f6270-a483-4ba6-8a04-cb8fbb632921}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\skin\mainUI">
+      <UniqueIdentifier>{7246f657-5780-4654-bd58-a33c364c8641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frame\mainFrame">
+      <UniqueIdentifier>{d27a5604-85bc-466c-ab23-5e541c02aa25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\skin\redraw">
+      <UniqueIdentifier>{7a4bd4f3-4ab5-4c71-9b4b-8c27306dbee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Frame\redraw">
+      <UniqueIdentifier>{ed0d4e6d-2206-4048-b623-b2b0b048ea20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ControlDemo.h">
-      <Filter>Frame</Filter>
-    </ClInclude>
     <ClInclude Include="Duilib.h">
       <Filter>Common</Filter>
     </ClInclude>
@@ -39,52 +48,67 @@
     <ClInclude Include="stdafx.h">
       <Filter>资源文件</Filter>
     </ClInclude>
-    <ClInclude Include="PageControl.h">
-      <Filter>Frame</Filter>
-    </ClInclude>
-    <ClInclude Include="PageSenior.h">
-      <Filter>Frame</Filter>
-    </ClInclude>
-    <ClInclude Include="PageExtand.h">
-      <Filter>Frame</Filter>
-    </ClInclude>
-    <ClInclude Include="PageActiveX.h">
-      <Filter>Frame</Filter>
-    </ClInclude>
     <ClInclude Include="SkinFrame.h">
       <Filter>Frame</Filter>
     </ClInclude>
     <ClInclude Include="PopFrame.h">
       <Filter>Frame</Filter>
     </ClInclude>
+    <ClInclude Include="ControlDemo.h">
+      <Filter>Frame\mainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageActiveX.h">
+      <Filter>Frame\mainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageControl.h">
+      <Filter>Frame\mainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageExtand.h">
+      <Filter>Frame\mainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="pageRedraw.h">
+      <Filter>Frame\mainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="PageSenior.h">
+      <Filter>Frame\mainFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlExUI.h">
+      <Filter>Frame\redraw</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Main</Filter>
     </ClCompile>
-    <ClCompile Include="ControlDemo.cpp">
-      <Filter>Frame</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>资源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="PageControl.cpp">
-      <Filter>Frame</Filter>
-    </ClCompile>
-    <ClCompile Include="PageSenior.cpp">
-      <Filter>Frame</Filter>
-    </ClCompile>
-    <ClCompile Include="PageExtand.cpp">
-      <Filter>Frame</Filter>
-    </ClCompile>
-    <ClCompile Include="PageActiveX.cpp">
-      <Filter>Frame</Filter>
     </ClCompile>
     <ClCompile Include="SkinFrame.cpp">
       <Filter>Frame</Filter>
     </ClCompile>
     <ClCompile Include="PopFrame.cpp">
       <Filter>Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlDemo.cpp">
+      <Filter>Frame\mainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageActiveX.cpp">
+      <Filter>Frame\mainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageControl.cpp">
+      <Filter>Frame\mainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageExtand.cpp">
+      <Filter>Frame\mainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="pageRedraw.cpp">
+      <Filter>Frame\mainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="PageSenior.cpp">
+      <Filter>Frame\mainFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlExUI.cpp">
+      <Filter>Frame\redraw</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,25 +117,10 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\Debug\skin\duilib.xml">
-      <Filter>资源文件\skin</Filter>
-    </Xml>
-    <Xml Include="..\Debug\skin\pageBase.xml">
-      <Filter>资源文件\skin</Filter>
-    </Xml>
-    <Xml Include="..\Debug\skin\pageSenior.xml">
-      <Filter>资源文件\skin</Filter>
-    </Xml>
     <Xml Include="..\Debug\skin\listItem.xml">
       <Filter>资源文件\skin</Filter>
     </Xml>
-    <Xml Include="..\Debug\skin\pageExtand.xml">
-      <Filter>资源文件\skin</Filter>
-    </Xml>
     <Xml Include="..\Debug\skin\menu.xml">
-      <Filter>资源文件\skin</Filter>
-    </Xml>
-    <Xml Include="..\Debug\skin\pageActiveX.xml">
       <Filter>资源文件\skin</Filter>
     </Xml>
     <Xml Include="..\Debug\skin\skin.xml">
@@ -125,6 +134,30 @@
     </Xml>
     <Xml Include="..\Debug\skin\english.xml">
       <Filter>资源文件\skin</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\duilib.xml">
+      <Filter>资源文件\skin\mainUI</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageActiveX.xml">
+      <Filter>资源文件\skin\mainUI</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageBase.xml">
+      <Filter>资源文件\skin\mainUI</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageExtand.xml">
+      <Filter>资源文件\skin\mainUI</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageSenior.xml">
+      <Filter>资源文件\skin\mainUI</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageRedraw.xml">
+      <Filter>资源文件\skin\mainUI</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\card.xml">
+      <Filter>资源文件\skin\redraw</Filter>
+    </Xml>
+    <Xml Include="..\Debug\skin\search.xml">
+      <Filter>资源文件\skin\redraw</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

@@ -104,7 +104,7 @@ namespace DuiLib {
 		virtual SIZE GetFixedXY() const;         // 实际大小位置使用GetPos获取，这里得到的是预设的参考值
 		virtual void SetFixedXY(SIZE szXY);      // 仅float为true时有效
 		virtual SIZE GetFixedSize() const;
-		virtual int GetFixedWidth() const;       // 实际大小位置使用GetPos获取，这里得到的是预设的参考值
+		virtual int GetFixedWidth() const;       // 实际大小位置UIEVENT_MOUSEHOVER使用GetPos获取，这里得到的是预设的参考值
 		virtual void SetFixedWidth(int cx);      // 预设的参考值
 		virtual int GetFixedHeight() const;      // 实际大小位置使用GetPos获取，这里得到的是预设的参考值
 		virtual void SetFixedHeight(int cy);     // 预设的参考值

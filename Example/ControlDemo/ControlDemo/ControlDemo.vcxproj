@@ -49,6 +49,7 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>E:\git\Duilib\Duilib;$(IncludePath)</IncludePath>
     <LibraryPath>E:\git\Duilib\Duilib\Lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\Release</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -85,10 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ControlDemo.h" />
+    <ClInclude Include="ControlExUI.h" />
     <ClInclude Include="Duilib.h" />
     <ClInclude Include="PageActiveX.h" />
     <ClInclude Include="PageControl.h" />
     <ClInclude Include="PageExtand.h" />
+    <ClInclude Include="pageRedraw.h" />
     <ClInclude Include="PageSenior.h" />
     <ClInclude Include="PopFrame.h" />
     <ClInclude Include="Resource.h" />
@@ -98,10 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ControlDemo.cpp" />
+    <ClCompile Include="ControlExUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PageActiveX.cpp" />
     <ClCompile Include="PageControl.cpp" />
     <ClCompile Include="PageExtand.cpp" />
+    <ClCompile Include="pageRedraw.cpp" />
     <ClCompile Include="PageSenior.cpp" />
     <ClCompile Include="PopFrame.cpp" />
     <ClCompile Include="SkinFrame.cpp" />
@@ -123,10 +128,16 @@
     <Xml Include="..\Debug\skin\english.xml">
       <SubType>Designer</SubType>
     </Xml>
+    <Xml Include="..\Debug\skin\card.xml">
+      <SubType>Designer</SubType>
+    </Xml>
     <Xml Include="..\Debug\skin\listItem.xml">
       <SubType>Designer</SubType>
     </Xml>
     <Xml Include="..\Debug\skin\menu.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\search.xml">
       <SubType>Designer</SubType>
     </Xml>
     <Xml Include="..\Debug\skin\pageActiveX.xml">
@@ -136,6 +147,9 @@
       <SubType>Designer</SubType>
     </Xml>
     <Xml Include="..\Debug\skin\pageExtand.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="..\Debug\skin\pageRedraw.xml">
       <SubType>Designer</SubType>
     </Xml>
     <Xml Include="..\Debug\skin\pageSenior.xml">

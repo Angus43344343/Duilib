@@ -473,7 +473,7 @@ namespace DuiLib {
 
 	void CControlUI::SetFixedWidth(int cx)
 	{
-		if( cx < 0 ) return; 
+		//if( cx < 0 ) return;//zm 
 		m_cxyFixed.cx = cx;
 		NeedParentUpdate();
 	}
@@ -490,7 +490,7 @@ namespace DuiLib {
 
 	void CControlUI::SetFixedHeight(int cy)
 	{
-		if( cy < 0 ) return; 
+		//if( cy < 0 ) return;//zm 
 		m_cxyFixed.cy = cy;
 		NeedParentUpdate();
 	}
@@ -979,13 +979,15 @@ namespace DuiLib {
 			rcPos.left = _tcstol(pstrValue, &pstr, 10);  ASSERT(pstr);    
 			rcPos.top = _tcstol(pstr + 1, &pstr, 10);    ASSERT(pstr);    
 			rcPos.right = _tcstol(pstr + 1, &pstr, 10);  ASSERT(pstr);    
-			rcPos.bottom = _tcstol(pstr + 1, &pstr, 10); ASSERT(pstr);    
-			SIZE szXY = {rcPos.left >= 0 ? rcPos.left : rcPos.right, rcPos.top >= 0 ? rcPos.top : rcPos.bottom};
+			rcPos.bottom = _tcstol(pstr + 1, &pstr, 10); ASSERT(pstr);  
+			
+			SIZE szXY = { rcPos.left, rcPos.top };//zm
+			//SIZE szXY = {rcPos.left >= 0 ? rcPos.left : rcPos.right, rcPos.top >= 0 ? rcPos.top : rcPos.bottom};
 			SetFixedXY(szXY);
-			//SetFixedWidth(rcPos.right - rcPos.left);
-			//SetFixedHeight(rcPos.bottom - rcPos.top);
-			SetFixedWidth(abs(rcPos.right - rcPos.left));//zm
-			SetFixedHeight(abs(rcPos.bottom - rcPos.top));//zm
+			SetFixedWidth(rcPos.right - rcPos.left);
+			SetFixedHeight(rcPos.bottom - rcPos.top);
+			//SetFixedWidth(abs(rcPos.right - rcPos.left));//zm
+			//SetFixedHeight(abs(rcPos.bottom - rcPos.top));//zm
 		}
 		else if( _tcsicmp(pstrName, _T("float")) == 0 ) 
 		{

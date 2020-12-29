@@ -121,15 +121,6 @@
                 <RichEdit name="reditTest3" style="styleRichEdit" font="1" maxchar="10"  tipvalue="限制输入10个字符"/>
                 <RichEdit name="reditTest4" style="styleRichEdit" tipvalue="输入密码" password="true" passwordchar="*"/>
                 <RichEdit name="reditTest5" width="200" height="90" vscrollbar="true" autovscroll="true" bkcolor="#fffffff0"/>
-                <RichEdit name="reditTest6" width="240" height="26" childvalign="vcenter" textpadding="16,6,16,0" multiline="false" borderround="26,26"  tipvalue="周杰伦 晴天" bkcolor="#ffFFFFE0">
-                    <Control height="1"/>
-                    <Button name="btnSearch" width="16" height="16" normalimage="res=&apos;common/search.png&apos;" hotimage="res=&apos;common/search.png&apos;" pushedimage="res=&apos;common/search.png&apos;"/>
-                </RichEdit>
-
-                <RichEdit name="reditTest7" width="240" height="90" textpadding="2,20,2,0" bkcolor="#ffFFFFE0">
-                    <Control height="1"/>
-                    <Button name="btnSearch" width="16" height="16" normalimage="res=&apos;common/search.png&apos;" hotimage="res=&apos;common/search.png&apos;" pushedimage="res=&apos;common/search.png&apos;"/>
-                </RichEdit>
             </HorizontalLayout><!--============================================================================================================================================================================RichEdit-->
             <Control height="1" bkcolor="#ffFF00FF"/>
 
@@ -153,7 +144,7 @@
 
             <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--Slider-->
                 <Slider name="sliderTest" width="124" min="0" max="200" value="50" height="19" bkimage="res=&apos;slider/SliderBarBk.bmp&apos; mask=&apos;#ffff00ff&apos;" thumbimage="res=&apos;Slider/SliderBarThumb.png&apos;" thumbsize="12,19"/>
-                <Slider name="sliderTest1" width="124" min="0" max="200" value="50" height="19" bkimage="res=&apos;slider/SliderBarBk.bmp&apos; mask=&apos;#ffffffff&apos;" thumbimage="res=&apos;Slider/SliderBarThumb.png&apos;" thumbsize="12,19" step="10" sendmove="true" showtext="true"/>
+                <Slider name="sliderTest1"  min="0" max="200" value="50" height="19" bkimage="res=&apos;slider/SliderBarBk.bmp&apos; mask=&apos;#ffffffff&apos; corner=&apos;2,2,2,2&apos;" thumbimage="res=&apos;Slider/SliderBarThumb.png&apos;" thumbsize="12,19" step="10" sendmove="true" showtext="true"/>
             </HorizontalLayout><!--=====================================================================Slider-->
             <Control height="1" bkcolor="#ffFF00FF"/>
 

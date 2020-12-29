@@ -5,9 +5,9 @@
 #include "PageSenior.h"
 #include "PageExtand.h"
 #include "PageActiveX.h"
+#include "PageRedraw.h"
 
 #include "SkinFrame.h"
-
 
 class CControlDemo : public WindowImplBase, public SkinChangedReceiver
 {
@@ -36,6 +36,7 @@ private:
 	CPageSenior m_objPageSenior;
 	CPageExtand m_objPageExtand;
 	CPageActiveX m_objPageActiveX;
+	CPageRedraw m_objPageRedraw;
 };
 
 #endif /*_CONTROLDEMO_H__*/

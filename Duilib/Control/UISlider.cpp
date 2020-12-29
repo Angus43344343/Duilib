@@ -55,11 +55,12 @@ namespace DuiLib
 	{
 		RECT rcThumb = {0};
 		SIZE m_szThumb = CSliderUI::m_szThumb;
+#if 0
 		if (GetManager() != NULL) 
 		{
 			GetManager()->GetDPIObj()->Scale(&m_szThumb);
 		}
-
+#endif
 		if( m_bHorizontal ) 
 		{
 			int left = m_rcItem.left + (m_rcItem.right - m_rcItem.left - m_szThumb.cx) * (m_nValue - m_nMin) / (m_nMax - m_nMin);
@@ -72,11 +73,12 @@ namespace DuiLib
 			int top = m_rcItem.bottom - m_szThumb.cy - (m_rcItem.bottom - m_rcItem.top - m_szThumb.cy) * (m_nValue - m_nMin) / (m_nMax - m_nMin);
 			rcThumb = CDuiRect(left, top, left + m_szThumb.cx, top + m_szThumb.cy); 
 		}
-
-		//if(m_pManager != NULL) 
-		//{
-			//m_pManager->GetDPIObj()->Scale(&rcThumb);
-		//}//zm
+#if 1
+		if(m_pManager != NULL) 
+		{
+			m_pManager->GetDPIObj()->Scale(&rcThumb);
+		}//zm
+#endif
 		return rcThumb;
 	}
 

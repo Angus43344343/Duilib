@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "ControlDemo.h"
 
+#include "ControlExUI.h"
+
 int APIENTRY _tWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPTSTR lpCmdLine, _In_ int nCmdShow)
 {
 	//ÄÚ´æ¼ì²â
@@ -17,6 +19,10 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstanc
 	CPaintManagerUI::SetInstance(hInstance);
 	CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _T("skin"));
 
+	//×¢²á×Ô»æ¿Ø¼þ
+	REGIST_DUICONTROL(CCardUI);
+	REGIST_DUICONTROL(COptionExUI);
+	
 	CControlDemo *pobjFrameWnd = new CControlDemo();
 	assert(nullptr != pobjFrameWnd);
 

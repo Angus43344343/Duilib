@@ -4,6 +4,7 @@
     <Text id="lsListControl" value="List Control" />
     <Text id="lsExtandControl" value="Extand Control" />
     <Text id="lsActiveXControl" value="ActiveX Control" />
+    <Text id="lsRedrawControl" value="Redraw Control" />
     <Text id="lsLanguageSwitch" value="Language Switch" />
     <Text id="lsAutoOne" value="AutoOne" />
 </Res>
