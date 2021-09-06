@@ -21,7 +21,6 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstanc
 
 	//×¢²á×Ô»æ¿Ø¼þ
 	REGIST_DUICONTROL(CCardUI);
-	REGIST_DUICONTROL(COptionExUI);
 	
 	CControlDemo *pobjFrameWnd = new CControlDemo();
 	assert(nullptr != pobjFrameWnd);

@@ -2299,7 +2299,8 @@ namespace DuiLib {
 				CControlUI* pParent = GetParent();
 				RECT rcTemp;
 				RECT rcParent;
-				while( pParent = pParent->GetParent() )
+				pParent = pParent->GetParent();//zm
+				while (NULL != pParent)//zm
 				{
 					rcTemp = invalidateRc;
 					rcParent = pParent->GetPos();
@@ -2307,6 +2308,7 @@ namespace DuiLib {
 					{
 						return;
 					}
+					pParent = pParent->GetParent();//zm
 				}
 
 				if( m_pManager != NULL ) m_pManager->Invalidate(invalidateRc);
@@ -3110,7 +3112,8 @@ namespace DuiLib {
 				CControlUI* pParent = GetParent();
 				RECT rcTemp;
 				RECT rcParent;
-				while( pParent = pParent->GetParent() )
+				pParent = pParent->GetParent();//zm
+				while (NULL != pParent)//zm
 				{
 					rcTemp = invalidateRc;
 					rcParent = pParent->GetPos();
@@ -3118,6 +3121,7 @@ namespace DuiLib {
 					{
 						return;
 					}
+					pParent = pParent->GetParent();//zm
 				}
 
 				if( m_pManager != NULL ) m_pManager->Invalidate(invalidateRc);

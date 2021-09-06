@@ -402,7 +402,7 @@ namespace DuiLib {
 
 	LPCTSTR CListContainerHeaderItemUI::GetClass() const
 	{
-		return _T("ListContainerHeaderItem");
+		return _T("ListContainerHeaderItemUI");
 	}
 
 	LPVOID CListContainerHeaderItemUI::GetInterface(LPCTSTR pstrName)
@@ -419,7 +419,8 @@ namespace DuiLib {
 
 	void CListContainerHeaderItemUI::SetEnabled(BOOL bEnable)
 	{
-		CContainerUI::SetEnabled(bEnable);
+		bool bIntelEnable = (TRUE == bEnable) ? true : false;//zm
+		CContainerUI::SetEnabled(bIntelEnable);
 		if( !IsEnabled() ) 
 		{
 			m_uButtonState = 0;

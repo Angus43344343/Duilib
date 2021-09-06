@@ -158,7 +158,7 @@
 
             <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--FadeButton-->
                 <FadeButton name="fbtnTest" width="117" height="36" text="FadeButton测试" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
-                <FadeButton name="fbtnTest1" width="117" height="36" text="非模态对话框测试" padding="40,0,0,0" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
+                <FadeButton name="fbtnTest1" shortcut="F1" width="117" height="36" text="非模态对话框测试" padding="40,0,0,0" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
                 <FadeButton name="fbtnTest2" width="117" height="36" text="模态对话框测试" normalimage="res=&apos;button/BtnNormal.png&apos;" hotimage="res=&apos;button/BtnHot.png&apos;" pushedimage="res=&apos;button/BtnPushed.png&apos;" disabledimage="res=&apos;button/BtnDisable.png&apos;"/>
                 <Button name="floatbtn" text="浮动按钮" colorhsl="true" float="true" pos="-20,0,-80,30" textcolor="#FF000000" bkcolor="#FFFF5555" hotbkcolor="#AAFFFF00" pushedbkcolor="#FFFF00FF" borderround="4,4"/>
             </HorizontalLayout><!--=====================================================================FadeButton-->
@@ -194,7 +194,7 @@
             <Control height="1" bkcolor="#ffFF00FF"/>
 
             <HorizontalLayout height="60" inset="10,2,2,2" childpadding="20" childvalign="vcenter"> <!--GroupBox-->
-                <GroupBox name="gbTest" text="GroupBox布局不完全,只能控件float在上面" width="400" height="50" textcolor="#FF000000" bordercolor="#FF111111" bordersize="1" borderround="6,6" showshadow="true"/>
+                <GroupBox name="gbTest"  text="GroupBox控件" textcolor="#FF000000" width="400" height="50"  bordercolor="#FF111111" bordersize="1" borderround="6,6"/>
             </HorizontalLayout>                                                                     <!--GroupBox-->
             <Control height="1" bkcolor="#ffFF00FF"/>
         </VerticalLayout>

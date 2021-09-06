@@ -1,0 +1,69 @@
+﻿生成启动时间为 2021/1/4 1:29:07。
+     1>项目“E:\git\Duilib\Duilib\DuiLib.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\vs2013\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"E:\git\Duilib\Duilib\Temp\Debug\DuiLib_d.pch" /Fo"E:\git\Duilib\Duilib\Temp\Debug\\" /Fd"E:\git\Duilib\Duilib\Temp\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Control\UICombo.cpp
+         UICombo.cpp
+       Link:
+         E:\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git\Duilib\Duilib\Bin\DuiLib_d.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"E:\git\Duilib\Duilib\Bin\DuiLib_d.pdb" /TLBID:1 /BASE:"0x11000000" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git\Duilib\Duilib\Lib\DuiLib_d.lib" /MACHINE:X86 /SAFESEH /DLL E:\git\Duilib\Duilib\Temp\Debug\UICheckBox.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIFlash.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIIPAddressEx.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIList.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIRollText.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIAnimation.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIColorPalette.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIFadeButton.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIGifAnim.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIGifAnimEx.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIGroupBox.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIHotKey.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIIPAddress.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIListEx.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIMenu.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIRing.obj
+         E:\git\Duilib\Duilib\Temp\Debug\ControlFactory.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIResourceManager.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIAnimationTabLayout.obj
+         E:\git\Duilib\Duilib\Temp\Debug\StdAfx.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIlib.obj
+         E:\git\Duilib\Duilib\Temp\Debug\DPI.obj
+         E:\git\Duilib\Duilib\Temp\Debug\DragDropImpl.obj
+         E:\git\Duilib\Duilib\Temp\Debug\TrayIcon.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIShadow.obj
+         E:\git\Duilib\Duilib\Temp\Debug\unzip.obj
+         E:\git\Duilib\Duilib\Temp\Debug\WinImplBase.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIDelegate.obj
+         E:\git\Duilib\Duilib\Temp\Debug\Utils.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIBase.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIContainer.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIControl.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIDlgBuilder.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIManager.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIMarkup.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIRender.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIChildLayout.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIHorizontalLayout.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UITabLayout.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UITileLayout.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIVerticalLayout.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIActiveX.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIButton.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UICombo.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIComboBox.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIDateTime.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIEdit.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UILabel.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIOption.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIProgress.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIRichEdit.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIScrollBar.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UISlider.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIText.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UITreeView.obj
+         E:\git\Duilib\Duilib\Temp\Debug\UIWebBrowser.obj
+            正在创建库 E:\git\Duilib\Duilib\Lib\DuiLib_d.lib 和对象 E:\git\Duilib\Duilib\Lib\DuiLib_d.exp
+         DuiLib.vcxproj -> E:\git\Duilib\Duilib\Bin\DuiLib_d.dll
+     1>已完成生成项目“E:\git\Duilib\Duilib\DuiLib.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.71

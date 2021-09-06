@@ -392,14 +392,17 @@ namespace DuiLib {
 			CControlUI* pParent = this;
 			RECT rcTemp;
 			RECT rcParent;
-			while( pParent = pParent->GetParent() ) 
+			pParent = pParent->GetParent();//zm
+			while (NULL != pParent)//zm
 			{
 				if( !pParent->IsVisible() ) return;
 				rcTemp = invalidateRc;
 				rcParent = pParent->GetPos();
 				if( !::IntersectRect(&invalidateRc, &rcTemp, &rcParent) ) return;
+
+				pParent = pParent->GetParent();
 			}
-			m_pManager->Invalidate(invalidateRc);
+			m_pManager->Invalidate(invalidateRc);//zm
 		}
 	}
 
@@ -770,7 +773,8 @@ namespace DuiLib {
 		CControlUI* pParent = this;
 		RECT rcTemp;
 		RECT rcParent;
-		while( pParent = pParent->GetParent() )
+		pParent = pParent->GetParent();//zm
+		while (NULL != pParent)//zm
 		{
 			rcTemp = invalidateRc;
 			rcParent = pParent->GetPos();
@@ -778,6 +782,7 @@ namespace DuiLib {
 			{
 				return;
 			}
+			pParent = pParent->GetParent();//zm
 		}
 
 		if( m_pManager != NULL ) m_pManager->Invalidate(invalidateRc);

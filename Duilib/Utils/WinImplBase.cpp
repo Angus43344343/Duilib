@@ -53,7 +53,7 @@ namespace DuiLib
 			case VK_RETURN:
 			case VK_ESCAPE:
 				//return ResponseDefaultKeyEvent(wParam);
-				bHandled = ResponseDefaultKeyEvent(wParam);
+				bHandled  = (TRUE == ResponseDefaultKeyEvent(wParam)) ? true : false;
 				break;
 			default:
 				break;

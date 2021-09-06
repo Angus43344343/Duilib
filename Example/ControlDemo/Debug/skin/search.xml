@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window>
-    <VerticalLayout>
-        <RichEdit name="reditTest6" textpadding="18,6,30,0" multiline="false" borderround="26,26"  tipvalue="周杰伦 晴天" bkcolor="#ffFFFFE0" />
+    <VerticalLayout inset="2,2,2,2">
+        <Combo name="cmbSearch" width="240" height="26" dropbox="bordersize=&quot;1&quot; bordercolor=&quot;#ff00BFFF&quot; vscrollbar=&quot;true&quot;"  itemvalign="vcenter" itemtextpadding="10,0,0,0" />
+        <Edit name="redtSearch" float="true"  pos="0,0,240,26" textpadding="18,6,30,0" multiline="false" borderround="26,26"  tipvalue="周杰伦 晴天" bkcolor="#ffFFFFE0" />
         <Button name="btnSearch" float="1.0,0.5,1.0,0.5" pos="-24,-9,-6,9" normalimage="res=&apos;common/btn_search.png&apos; source=&apos;0,0,18,18&apos;" hotimage="res=&apos;common/btn_search.png&apos; source=&apos;38,0,56,18&apos;" />
     </VerticalLayout>
 </Window>

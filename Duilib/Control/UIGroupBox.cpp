@@ -69,6 +69,7 @@ namespace DuiLib
 			return;
 		}
 
+		if (m_dwBackColor == 0) m_dwBackColor = m_pManager->GetRoot()->GetBkColor();//zm
 		if( m_dwTextColor == 0 ) m_dwTextColor = m_pManager->GetDefaultFontColor();
 		if( m_dwDisabledTextColor == 0 ) m_dwDisabledTextColor = m_pManager->GetDefaultDisabledColor();
 		if( sText.IsEmpty() ) return;

@@ -6,8 +6,32 @@
 namespace DuiLib {
 	/////////////////////////////////////////////////////////////////////////////////////
 	//
+	class CComboUI;
+	class CComboWnd : public CWindowWnd, public INotifyUI
+	{
+	public:
+		void Init(CComboUI* pOwner);
+		LPCTSTR GetWindowClassName() const;
+		void OnFinalMessage(HWND hWnd);
 
-	class CComboWnd;
+		LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam);
+		void Notify(TNotifyUI& msg) override;
+
+		void EnsureVisible(int iIndex);
+		void Scroll(int dx, int dy);
+
+#if(_WIN32_WINNT >= 0x0501)
+		virtual UINT GetClassStyle() const;
+#endif
+		bool IsHitItem(POINT ptMouse);
+
+	public:
+		CPaintManagerUI m_pm;
+		CComboUI* m_pOwner;
+		CVerticalLayoutUI* m_pLayout;
+		int m_iOldSel;
+		bool m_bHitItem;
+	};
 
 	class UILIB_API CComboUI : public CContainerUI, public IListOwnerUI
 	{
@@ -125,6 +149,8 @@ namespace DuiLib {
 		virtual void DragBegin(TEventUI& event) {};
 		virtual void Draging(TEventUI& event) {};
 		virtual void DragEnd(TEventUI& event) {};
+
+		CComboWnd* GetComboWnd() const;//zm
 
 	protected:
 		CComboWnd* m_pWindow;

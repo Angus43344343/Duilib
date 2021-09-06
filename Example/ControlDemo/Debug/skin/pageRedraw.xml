@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Window>
-    <VerticalLayout vscrollbar="true">
-        <HorizontalLayout height="300" childvalign="vcenter" inset="2,0,2,2" hscrollbar="true">
+    <VerticalLayout >
+        <HorizontalLayout height="300" childvalign="vcenter" inset="2,0,2,2"><!--CardUI-->
             <Label name="lbltest1" text="Card测试：" style="styleLabel"/>
             <Control width="1" bkcolor="#ffFF00FF" />
             
-            <TileLayout vscrollbar="true" itemsize="230,150" childpadding="10">
+            <TileLayout  vscrollbar="true" itemsize="230,150" childpadding="10">
                 <Card name="lblExTest" width="230" height="150" Image="res=&apos;card/1.jpg&apos; corner=&apos;2,2,2,2&apos;" Name="水门" Age="18" Sex="男" ID="12121" Birthday="2020-12-21" Tel="13923231221" CreateTime="2020-12-29"/>
                 <Card name="lblExTest" width="230" height="150" Image="res=&apos;card/2.jpg&apos; corner=&apos;2,2,2,2&apos;" Name="卡卡西" Age="18" Sex="男" ID="12121" Birthday="2020-12-21" Tel="13923231221" CreateTime="2020-12-29"/>
                 <Card name="lblExTest" width="230" height="150" Image="res=&apos;card/3.jpg&apos; corner=&apos;2,2,2,2&apos;" Name="大蛇丸" Age="18" Sex="男" ID="12121" Birthday="2020-12-21" Tel="13923231221" CreateTime="2020-12-29"/>
@@ -15,13 +15,8 @@
                 <Card name="lblExTest" width="230" height="150" Image="res=&apos;card/7.png&apos; corner=&apos;2,2,2,2&apos;" Name="自来也" Age="18" Sex="男" ID="12121" Birthday="2020-12-21" Tel="13923231221" CreateTime="2020-12-29"/>
                 <Card name="lblExTest" width="230" height="150" Image="res=&apos;card/8.jpg&apos; corner=&apos;2,2,2,2&apos;" Name="雏田" Age="18" Sex="女" ID="12121" Birthday="2020-12-21" Tel="13923231221" CreateTime="2020-12-29"/>
             </TileLayout>
-        
-        </HorizontalLayout>
+        </HorizontalLayout><!--=================================================CardUI-->
         <Control height="1" bkcolor="#ffFF00FF"/>
-    </VerticalLayout>
-
-    <VerticalLayout>
-     
-        <OptionEx name="optExTest" width="240" height="26"/>
+        
     </VerticalLayout>
 </Window>

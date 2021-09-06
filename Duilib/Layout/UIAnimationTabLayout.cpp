@@ -28,7 +28,7 @@ namespace DuiLib {
 	bool CAnimationTabLayoutUI::SelectItem( int iIndex )
 	{
 		if( iIndex < 0 || iIndex >= m_items.GetSize() ) return false;
-		if( iIndex == m_iCurSel ) return true;
+		if (iIndex == m_iCurSel) return true;
 		if( iIndex > m_iCurSel ) m_nPositiveDirection = -1;
 		if( iIndex < m_iCurSel ) m_nPositiveDirection = 1;
 

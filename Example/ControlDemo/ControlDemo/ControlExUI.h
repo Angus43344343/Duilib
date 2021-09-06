@@ -3,7 +3,6 @@
 
 #include "Duilib.h"
 #define DUI_CTL_CARD		_T("Card")
-#define DUI_CTL_OPTION_EX	_T("OptionEx")
 
 namespace DuiLib
 {
@@ -51,19 +50,6 @@ namespace DuiLib
 		CLabelUI* m_pobjLblCreateTime;
 	};
 
-	//===========================================================
-	class COptionExUI : public CContainerUI
-	{
-		DECLARE_DUICONTROL(COptionExUI)
-	public:
-		LPCTSTR GetClass() const;
-		LPVOID GetInterface(LPCTSTR pstrName);
-		UINT GetControlFlags() const;
 
-		virtual void DoInit() override;
-	public:
-		COptionExUI() = default;
-		~COptionExUI() = default;
-	};
 }
 #endif/*_CONTROLEXUI_H__*/

@@ -5,32 +5,6 @@ namespace DuiLib {
 	/////////////////////////////////////////////////////////////////////////////////////
 	//
 	
-	class CComboWnd : public CWindowWnd, public INotifyUI
-	{
-	public:
-		void Init(CComboUI* pOwner);
-		LPCTSTR GetWindowClassName() const;
-		void OnFinalMessage(HWND hWnd);
-
-		LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam);
-		void Notify(TNotifyUI& msg) override;
-
-		void EnsureVisible(int iIndex);
-		void Scroll(int dx, int dy);
-
-#if(_WIN32_WINNT >= 0x0501)
-		virtual UINT GetClassStyle() const;
-#endif
-		bool IsHitItem(POINT ptMouse);
-
-	public:
-		CPaintManagerUI m_pm;
-		CComboUI* m_pOwner;
-		CVerticalLayoutUI* m_pLayout;
-		int m_iOldSel;
-		bool m_bHitItem;
-	};
-
 	void CComboWnd::Notify(TNotifyUI& msg)
 	{
 		if (msg.sType == _T("windowinit"))
@@ -98,7 +72,7 @@ namespace DuiLib {
 			::MapWindowRect(pOwner->GetManager()->GetPaintWindow(), HWND_DESKTOP, &rc);
 		}
 
-		Create(pOwner->GetManager()->GetPaintWindow(), NULL, WS_POPUP, WS_EX_TOOLWINDOW, rc);
+		Create(pOwner->GetManager()->GetPaintWindow(), NULL, WS_POPUP, /*WS_EX_NOACTIVATE |*/ WS_EX_TOOLWINDOW, rc);
 		// HACK: Don't deselect the parent's caption
 		HWND hWndParent = m_hWnd;
 		while( ::GetParent(hWndParent) != NULL ) hWndParent = ::GetParent(hWndParent);
@@ -1338,6 +1312,11 @@ namespace DuiLib {
 			else
 				CRenderEngine::DrawText(hDC, m_pManager, rc, sText, m_dwDisabledTextColor, m_iFont, m_uTextStyle);
 		}
+	}
+
+	CComboWnd* CComboUI::GetComboWnd() const
+	{
+		return m_pWindow;
 	}
 
 } // namespace DuiLib

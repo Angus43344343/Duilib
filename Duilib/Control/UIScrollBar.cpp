@@ -390,7 +390,7 @@ namespace DuiLib
 			int cx = rc.right - rc.left;
 			if( m_bShowButton1 ) cx -= cxyFixed.cy;
 			if( m_bShowButton2 ) cx -= cxyFixed.cy;
-			if( cx > cxyFixed.cy ) 
+			if( cx > cxyFixed.cy ) //需要用到滚动条
 			{
 				m_rcButton1.left = rc.left;
 				m_rcButton1.top = rc.top;
@@ -423,7 +423,7 @@ namespace DuiLib
 				if( m_nRange > 0 ) 
 				{
 					int cxThumb = (int)(cx * (rc.right - rc.left) / (m_nRange + rc.right - rc.left));
-					if( cxThumb < cxyFixed.cy ) cxThumb = cxyFixed.cy;
+					if( cxThumb < cxyFixed.cy ) cxThumb = cxyFixed.cy;//
 
 					m_rcThumb.left = (LONG)(m_nScrollPos * (cx - cxThumb) / m_nRange + m_rcButton1.right);
 					m_rcThumb.right = m_rcThumb.left + cxThumb;
@@ -439,10 +439,10 @@ namespace DuiLib
 					m_rcThumb.right = m_rcButton2.left;
 				}
 			}
-			else 
+			else//不需要滚动条 
 			{
 				int cxButton = (rc.right - rc.left) / 2;
-				if( cxButton > cxyFixed.cy ) cxButton = cxyFixed.cy;
+				if( cxButton > cxyFixed.cy ) cxButton = cxyFixed.cy;//cxButton
 				m_rcButton1.left = rc.left;
 				m_rcButton1.top = rc.top;
 				if( m_bShowButton1 ) 

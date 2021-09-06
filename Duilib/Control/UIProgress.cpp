@@ -119,8 +119,8 @@ namespace DuiLib
 
 			RECT rcPos = GetPos();
 			Gdiplus::SolidBrush brush(m_dwForeColor);
-			int nStartDegree = 90;
-			int nSweepDegree = (int)(360.0f * (m_nValue * 1.0f / (m_nMax - m_nMin)));
+			Gdiplus::REAL nStartDegree = 90.0;
+			Gdiplus::REAL nSweepDegree = 360.0f * (m_nValue * 1.0f / (m_nMax - m_nMin));
 			g.FillPie(&brush, rcPos.left, rcPos.top, rcPos.right - rcPos.left, rcPos.bottom - rcPos.top, nStartDegree, nSweepDegree);
 
 			DWORD dwBkColor = 0xFFFFFFFF;

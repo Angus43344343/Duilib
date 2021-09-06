@@ -116,7 +116,8 @@ namespace DuiLib
 
 		CControlUI* pParent = m_pOwner;
 		RECT rcParent;
-		while( pParent = pParent->GetParent() ) 
+		pParent = pParent->GetParent();//zm
+		while (NULL != pParent)//zm
 		{
 			if( !pParent->IsVisible() ) //父容器不可见,则不可见
 			{
@@ -129,6 +130,7 @@ namespace DuiLib
 				rcPos.left = rcPos.top = rcPos.right = rcPos.bottom = 0;
 				break;
 			}
+			pParent = pParent->GetParent();//zm
 		}
 
 		return rcPos;

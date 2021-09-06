@@ -3,7 +3,7 @@
 
 #ifdef _USEIMM
 #include <imm.h>
-#pragma comment(lib, "imm32.lib")
+#pragma comment(lib, "imm32.lib") //输入法相关imm
 #endif
 // These constants are for backward compatibility. They are the 
 // sizes used for initialization and reset in RichEdit 1.0
@@ -1122,7 +1122,7 @@ err:
 
 	LPCTSTR CRichEditUI::GetClass() const
 	{
-		return DUI_CTR_RICHEDIT;
+		return _T("RichEditUI");
 	}
 
 	LPVOID CRichEditUI::GetInterface(LPCTSTR pstrName)
@@ -2067,7 +2067,8 @@ err:
 				if (!::IntersectRect(&rcCaret, &rcTemp, &m_rcItem)) return;
 				CControlUI* pParent = this;
 				RECT rcParent;
-				while (pParent = pParent->GetParent())
+				pParent = pParent->GetParent();//zm
+				while (NULL != pParent)//zm
 				{
 					rcTemp = rcCaret;
 					rcParent = pParent->GetPos();
@@ -2077,6 +2078,8 @@ err:
 						//m_pManager->GetRoot()->Invalidate();//zm
 						return;
 					}
+
+					pParent = pParent->GetParent();//zm
 				}
 
 				if(m_pManager->IsLayered() && IsFocused() && m_pTwh && m_pTwh->IsShowCaret()) 

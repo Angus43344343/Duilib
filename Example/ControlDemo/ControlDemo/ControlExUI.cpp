@@ -125,30 +125,4 @@ bool CCardUI::DoPaint(HDC hDC, const RECT& rcPaint, CControlUI* pStopControl)
 	return true;
 }
 
-//===================================================================================
-IMPLEMENT_DUICONTROL(COptionExUI)
-LPCTSTR COptionExUI::GetClass() const
-{
-	return _T("COptionExUI");
-}
-
-LPVOID COptionExUI::GetInterface(LPCTSTR pstrName)
-{
-	if (_tcsicmp(pstrName, DUI_CTL_OPTION_EX) == 0) return static_cast<COptionExUI*>(this);
-	return CContainerUI::GetInterface(pstrName);
-}
-
-UINT COptionExUI::GetControlFlags() const
-{
-	return CContainerUI::GetControlFlags();
-}
-
-void COptionExUI::DoInit()
-{
-	CDialogBuilder builder;
-	CVerticalLayoutUI* pOptionEx = static_cast<CVerticalLayoutUI*>(builder.Create(_T("search.xml"), (UINT)0, NULL, m_pManager));
-	_ASSERT(nullptr != pOptionEx);
-	this->Add(pOptionEx);
-}
-
 

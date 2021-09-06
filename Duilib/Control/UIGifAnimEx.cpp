@@ -133,7 +133,11 @@ namespace DuiLib
 			if(m_pGifImage)
 			{
 				if (CxImage* pImage = m_pGifImage->GetFrame(m_nFramePosition))
-					pImage->Draw2(hDC,rcItem);
+				{
+					::SetStretchBltMode(hDC, COLORONCOLOR);//zm 设置拉伸模式,否则图片失真
+					pImage->Draw2(hDC, rcItem);
+				}
+					
 			}
 		}
 

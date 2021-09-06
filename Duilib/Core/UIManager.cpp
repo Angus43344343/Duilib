@@ -943,7 +943,7 @@ namespace DuiLib {
 				}
 			}
 			break;
-		case WM_SYSKEYDOWN://当用户按住ALT键同时按下其它键时提交此消息给拥有焦点的窗口
+		case WM_SYSKEYDOWN:
 			{
 				if( m_pFocus != NULL ) 
 				{
@@ -1025,7 +1025,8 @@ namespace DuiLib {
 				m_bAsyncNotifyPosted = false;
 
 				TNotifyUI* pMsg = NULL;
-				while( pMsg = static_cast<TNotifyUI*>(m_aAsyncNotify.GetAt(0)) ) 
+				pMsg = static_cast<TNotifyUI*>(m_aAsyncNotify.GetAt(0));//zm
+				while(NULL != pMsg) //zm
 				{
 					m_aAsyncNotify.Remove(0);
 					if( pMsg->pSender != NULL ) 
@@ -1036,7 +1037,9 @@ namespace DuiLib {
 					{
 						static_cast<INotifyUI*>(m_aNotifiers[j])->Notify(*pMsg);
 					}
+
 					delete pMsg;
+					pMsg = static_cast<TNotifyUI*>(m_aAsyncNotify.GetAt(0));//zm
 				}
 			}
 			break;
@@ -1774,11 +1777,13 @@ namespace DuiLib {
 			break;
 		case WM_RBUTTONUP:
 			{
+				if(m_bMouseCapture) ReleaseCapture();
+
 				POINT pt = { GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam) };
 				m_ptLastMousePos = pt;
 				m_pEventClick = FindControl(pt);
 				if(m_pEventClick == NULL) break;
-				ReleaseCapture();
+
 				TEventUI event = { 0 };
 				event.Type = UIEVENT_RBUTTONUP;
 				event.pSender = m_pEventClick;
@@ -1814,11 +1819,11 @@ namespace DuiLib {
 			break;
 		case WM_MBUTTONUP:
 			{
+				if(m_bMouseCapture) ReleaseCapture();
 				POINT pt = { GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam) };
 				m_ptLastMousePos = pt;
 				m_pEventClick = FindControl(pt);
 				if(m_pEventClick == NULL) break;
-				ReleaseCapture();
 
 				TEventUI event = { 0 };
 				event.Type = UIEVENT_MBUTTONUP;
